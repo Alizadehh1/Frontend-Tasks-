@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <form action="./message.html">
+        <div>
+            <label for="fname">First Name</label> <br>
+            <input required type="text" name="fname" id="fname" maxlength="50"> <br>
+        </div>
+        
+        <div>
+            <label for="lname">Last Name</label> <br>
+            <input required type="text" name="lname" id="lname" maxlength="100"> <br>
+        </div>
+
+        <div>
+            <label for="educ">Education: </label>
+
+            <select name="educ" id="educ">
+              <option value="nonopt" style="font-size: small;">Choose your Academic degree</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="master">Master</option>
+              <option value="phd">PHD</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="gender">Gender</label> <br>
+            <input type="radio" name="gender" id="gender1">
+            <label for="gender1">Male</label>
+            <input type="radio" name="gender" id="gender2">
+            <label for="gender2">Female</label> <br>
+        </div>
+        
+        <div>
+            <label for="fs">Family Status</label> <br>
+            <input type="checkbox" name="fs" id="fs1">
+            <label for="fs1">Single</label>
+            <input type="checkbox" name="fs" id="fs2">
+            <label for="fs2">Married</label>
+            <input type="checkbox" name="fs" id="fs3">
+            <label for="fs3">Divorced</label> <br>
+        </div>
+
+        <div>
+            <label for="email">Email</label> <br>
+            <input required type="email" name="email" id="email"> <br>
+        </div>
+
+        <div>
+            <label for="pwd">New Password</label> <br>
+            <input required type="password" name="pwd" id="pwd" minlength="5">
+        </div>
+
+        <div>
+            <label for="pnum">Phone number</label> <br>
+            <input type="text" name="pnum" id="pnum">
+        </div>
+
+        <div>
+            <label for="note">Your Notes for us</label> <br>
+            <textarea name="note" id="note" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+        
+    </form>
+    
+</body>
+</html>
