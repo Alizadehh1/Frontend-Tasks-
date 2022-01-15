@@ -1,0 +1,71 @@
+*{
+    box-sizing: content-box;
+}
+img{
+    width: 284px;
+    height: 100px;
+}
+.form0{
+    padding-top: 10px;
+    text-align: center;
+    background-color: white;
+    width: 432px;
+    height: 432px;
+    margin: auto;
+    border-radius: 0 0 8px 8px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(218, 221, 225);
+}
+.h1-0{
+    font-size: 25px;
+}
+.p0{
+    font-size: 15px;
+    color: rgb(96, 103, 112);
+}
+.div0, .div1{
+    text-align: center;
+}
+.div1{
+    background-color: white;
+    width: 432px;
+    height: 76px;
+    margin: auto;
+    padding-top: 10px;
+    line-height: 16px ;
+    border-radius: 8px 8px 0 0;
+}
+.div3, .div4, .div5, .div6{
+    padding-top: 10px;
+    text-align: center;
+}
+.span6, .span7{
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgb(218, 221, 225);
+}
+.span7{
+    margin-left: 40px;
+}
+.div7{
+    padding:0px 22px 0px 37px;
+    text-align: left;
+}
+
+.input8{
+    width: 194px;
+    height: 36px; 
+    border-style: solid; 
+    border-radius: 8px;
+    font-size: 18px;
+    border-color: rgb(218, 221, 225);
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    background-color: green;
+    color: white;
+}
+body{
+    background-color: rgb(240, 242, 245)
+}
