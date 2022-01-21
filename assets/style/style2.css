@@ -1,0 +1,15 @@
+.col1{
+    width: calc(100%/3);
+    height: 100%;
+    float: left;
+}
+.item1{
+    background-color: rgb(33, 124, 180);
+}
+.item2{
+    background-color: rgb(72, 212, 154);
+}
+.item3{
+    background-color: rgb(208, 255, 0);
+    height: 490px;
+}
