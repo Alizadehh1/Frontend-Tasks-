@@ -1,0 +1,216 @@
+header{
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 9;
+}
+.linkContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.icon{
+    width: 150px;
+    height: 100%;
+}
+/* .container{
+    width: 100%;
+    height: 100%;
+    border-color: gray;
+    border-style: solid;
+    margin: 15px;
+    padding: 15px;
+    border-width: 1px;
+} */
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: gray;
+}
+.column1 , .column2 , .column3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+.row1{
+    height: 500px;
+    background-color: lightblue;
+    width: 477px;
+    padding: 15px;
+    margin-left: 15px;
+}
+.row2{
+    height: 480px;
+    width: 853px;
+}
+.row3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 500px;
+    width: 477px;
+    margin-left: 15px;
+}
+.row4{
+    height: 480px;
+    width: 477px;
+    background-color: gray;
+}
+.row5{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 500px;
+    width: 477px;
+}
+.row6{
+    width: 969px;
+    height: 500px;
+    background-color: pink;
+    padding: 15px;
+    margin-left: 15px;
+}
+.row7{
+    width: 477px;
+    height: 480px;
+    background-color: gray;
+}
+.row3column1{
+    width: calc(100%-36px);
+    height: 245px;
+    background-color: lightgreen;
+    padding: 18px;
+    
+}
+.row3column2{
+    width: calc(100%-36px);
+    height: 245px;
+    background-color: lightgrey;
+    padding: 18px;
+}
+.row5column1{
+    width: calc(100%-36px);
+    height: 245px;
+    background-color: yellow;
+    padding: 18px;
+    
+}
+.row5column2{
+    width: calc(100%-36px);
+    height: 245px;
+    background-color: gray;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.p1{
+    color: gray;
+}
+.img1{
+    width: 100%;
+    height: 270px;
+    padding-top: 105px;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+}
+.boeinglogo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: unset;
+    color: black;
+    border-radius: 8px;
+    border-color: gray;
+    border-width: 1px;
+}
+.ads{
+    width: 101px;
+    height: 500px;
+    background-color: black;
+}
+.adstext{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 158px;
+}
+@media screen and (max-width: 1360px) {
+    .row1{
+        width: 1330px;
+    }
+    .row2{
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 1476px) {
+    .row6{
+        width: 1445px;
+        margin-right: 15px;
+    }
+    .ads{
+        width: 1445px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .row3 , .row4{
+        width: 700.5px;
+    }
+    .row4{
+        margin-right: 15px;
+    }
+    .row5{
+        width: 1445px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .row7{
+        width: 1445px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 1446px){
+    .row3 , .row4{
+        width: 1416px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 871px) {
+    .row2{
+        display: none;
+    }
+}
+
