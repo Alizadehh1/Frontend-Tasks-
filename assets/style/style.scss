@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../image/MIT-Dwarf-Halo-01-press_0.jpg);
+    .pluton-outline, .neptune-outline, .uranus-outline, .saturn-outline, .jupiter-outline, .mars-outline, .earth-outline, .venus-outline, .mercury-outline{
+        border-radius: 50%;
+        position: absolute;
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        animation: animate 5s linear infinite;
+    }
+    .pluton-outline{
+        width: 700px;
+        height: 700px;
+        border-color: gray;
+        animation-duration: 35s;
+        .pluton{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: -12.5px;
+            border-radius: 50%;
+            background-image: url(../image/Pluto-transparent.png);
+            background-size: cover;
+
+        }
+    }
+    .neptune-outline{
+        width: 700px;
+        height: 700px;
+        border-color: gray;
+        animation-duration: 32s;
+        .neptune{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            left: -20px;
+            background-image: url(../image/3D_Neptune.png);
+            background-size: cover;
+        }
+    }
+    .uranus-outline{
+        width: 600px;
+        height: 600px;
+        border-color: gray;
+        animation-duration: 30s;
+        .uranus{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            left: -20px;
+            background-image: url(../image/3D_Uranus.png);
+            background-size: cover;
+        }
+    }
+    .saturn-outline{
+        width: 490px;
+        height: 490px;
+        border-color: gray;
+        animation-duration: 35s;
+        .saturn{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: -30px;
+            
+            background-image: url(../image/381-3811500_saturn-saturn-planet-transparent-background.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: center;
+        }
+    }
+    .jupiter-outline{
+        width: 380px;
+        height: 380px;
+        border-color: gray;
+        animation-duration: 30s;
+        .jupiter{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: -25px;
+            background-image: url(../image/Jupiter.png);
+            background-size: cover;
+        }
+    }
+    .mars-outline{
+        width: 290px;
+        height: 290px;
+        border-color: gray;
+        animation-duration: 15s;
+        .mars{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: -12.5px;
+            border-radius: 50%;
+            background-image: url(../image/png_mars_planet_6479.png);
+            background-size: cover;
+        }
+    }
+    .earth-outline{
+        width: 190px;
+        height: 190px;
+        border-color: gray;
+        animation-duration: 13s;
+        .earth{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: -12.5px;
+            border-radius: 50%;
+            background-image: url(../image/Earth_Western_Hemisphere_transparent_background.png);
+            background-size: cover;
+        }
+    }
+    .venus-outline{
+        width: 130px;
+        height: 130px;
+        border-color: gray;
+        animation-duration: 8s;
+        .venus{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: -12.5px;
+            border-radius: 50%;
+            background-image: url(../image/480px-Venus_globe_-_transparent_background.png);
+            background-size: cover;
+        }
+    }
+    .mercury-outline{
+        width: 70px;
+        height: 70px;
+        border-color: gray;
+        animation-duration: 4s;
+        display: flex;
+        justify-content: center;
+        .mercury{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: -12.5px;
+            border-radius: 50%;
+            background-size: cover;
+            background-image: url(../image/3D_Mercury.png);
+        }
+        .sun{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-size: cover;
+            background-image: url(../image/sun.png);
+        }
+    }
+}
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
