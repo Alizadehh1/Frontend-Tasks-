@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="container-calculator">
+        <div class="display">
+            <!-- <p id="dsply">0</p> -->
+            <input class="dsply" type="text" name="dsply" id="dsply">
+
+        </div>
+        <div class="buttons">
+            <div class="line1">
+                <button onclick="btn7()" class="seven">7</button>
+                <button onclick="btn8()" class="eight">8</button>
+                <button onclick="btn9()" class="nine">9</button>
+                <button onclick="btnminus()" class="minus">-</button>
+                <button onclick="btnsum()" class="sum">+</button>
+                
+            </div>
+            <div class="line2">
+                <button onclick="btn4()" class="four">4</button>
+                <button onclick="btn5()" class="five">5</button>
+                <button onclick="btn6()" class="six">6</button>
+                <button onclick="btndiv()" class="divide">/</button>
+                <button onclick="btnx()" class="multiply">X</button>
+            </div>
+            <div class="line3">
+                <button onclick="btn1()" class="1">1</button>
+                <button onclick="btn2()" class="2">2</button>
+                <button onclick="btn3()" class="3">3</button>
+
+            </div>
+            <div class="line4">
+                <button></button>
+                <button onclick="btn0()" class="zero">0</button>
+                <button onclick="btnDel()" class="delete">C</button>
+                <button onclick="btnEqual()" class="equal">=</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
