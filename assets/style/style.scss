@@ -14,7 +14,6 @@ body{
     height: 500px;
     background-color: rgb(13, 59, 80);
     border: 4px solid orange;
-    
     .display{
         width: 400px;
         height: 200px;
@@ -28,7 +27,6 @@ body{
             background-color: black;
             border: none;
         }
-
     }
     .buttons{
         width: 400px;
@@ -46,21 +44,20 @@ body{
             .multiply{
                 border: 1px solid black;
                 border-radius: 30px;
-               background-color: #fda06d;
-               width: 64.34px;
-
+                background-color: #fda06d;
+                width: 64.34px;
                 height: 150px;
             }
             .minus{
                 border: 1px solid black;
-               background-color: #fda06d;
-               font-size: 40px;
+                background-color: #fda06d;
+                font-size: 40px;
                 width: 64.34px;
                 border-radius: 50%;
             }
             .sum{
                 border: 1px solid black;
-               background-color: #fda06d;
+                background-color: #fda06d;
                 width: 64.34px;
                 border-radius: 50%;
             }
@@ -69,22 +66,19 @@ body{
                border-radius: 30px;
                background-color: #fda06d;
                width: 64.34px;
-
-                height: 150px;
+               height: 150px;
             }
             .equal{
                background-color: #f8599b;
                width: 138.68px;
                border: 1px solid black;
                border-radius: 40%;
-
             }
             button{
                 width: 75px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
             }
             button:hover{
                 opacity: 40%;

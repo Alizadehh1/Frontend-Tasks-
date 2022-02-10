@@ -157,9 +157,6 @@ function btndiv() {
     operator = "/";
 }
 function btnEqual() {
-    console.log(num1);
-    console.log(num2);
-
     if (operator == "*") {
         num.value = num1*num2;
     }
