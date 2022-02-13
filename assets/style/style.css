@@ -1,0 +1,192 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.clock div {
+  margin: 0px;
+  padding: 0px;
+  width: 30px;
+  font-size: 30px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clock #minute-clockwise {
+  width: 15px;
+  height: 215px;
+  bottom: 245px;
+  right: 241.5px;
+  background-color: black;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.clock #second-clockwise {
+  width: 15px;
+  height: 215px;
+  bottom: 245px;
+  right: 241.5px;
+  background-color: gray;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.clock #hour-clockwise {
+  width: 15px;
+  height: 107.5px;
+  right: 241.5px;
+  bottom: 245px;
+  border-radius: 8px;
+  height: 2;
+  background-color: red;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 1;
+}
+
+.clock .analog-clock {
+  left: 340px;
+  top: 221.5px;
+  z-index: 0;
+  width: 110px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+.clock #hour {
+  color: black;
+}
+
+.clock #minute {
+  left: 40px;
+  color: black;
+}
+
+.clock #second {
+  left: 75px;
+  color: black;
+}
+
+.clock .twelve {
+  color: red;
+  left: 234px;
+  width: 30px;
+  font-size: 30px;
+}
+
+.clock .six {
+  left: 234px;
+  top: 463.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clock .three {
+  left: 468px;
+  top: 231.8px;
+}
+
+.clock .nine {
+  right: 468px;
+  top: 231.8px;
+}
+
+.clock .one {
+  left: 350px;
+  top: 28.6px;
+}
+
+.clock .eleven {
+  top: 28.6px;
+  right: 350px;
+}
+
+.clock .two {
+  left: 435px;
+  top: 110px;
+}
+
+.clock .four {
+  bottom: 110px;
+  left: 435px;
+}
+
+.clock .five {
+  bottom: 28.6px;
+  left: 350px;
+}
+
+.clock .seven {
+  bottom: 28.6px;
+  right: 350px;
+}
+
+.clock .eight {
+  bottom: 110px;
+  right: 435px;
+}
+
+.clock .ten {
+  right: 435px;
+  top: 110px;
+}
+
+.clock .dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  top: 234px;
+  right: 234px;
+}
+/*# sourceMappingURL=style.css.map */
