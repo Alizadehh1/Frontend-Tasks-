@@ -1,0 +1,233 @@
+
+
+header{
+    background-color: #616997;
+    height: 750px;
+}
+.secondColumn{
+    display: flex;
+    flex-direction: row;
+    height: 689px;
+}
+.row1{
+    width: 100%;
+}
+.row2Container{
+    /* background-color: black; */
+    width: 420px;
+    height: 440px;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+.big{
+    width: 90%;
+    height: 100%;
+}
+.row2{
+    width: 100%;
+    height: 100%;
+    
+    /* background-color: white; */
+}
+.pContainer{
+    width: 100%;
+}
+.name{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.p2{
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+}
+.p3{
+    color: rgb(165, 164, 164);
+    font-size: 10px;
+    margin: 0px;
+}
+.dateTime{
+    width: 199.85px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+.p4{
+    color: white;
+    margin: 0px;
+    font-size: 11px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+.text{
+    width: calc(100%/3*2);
+}
+.grid{
+    display: flex;
+    width: calc(100%/3);
+    flex-direction: row ;
+    align-items: center;
+    margin-left: 20px;
+}
+.btns{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid gray;
+    width: 247px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logos{
+    width: 124px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lastest, .popular{
+    border-radius: 20px;
+    border-width: 0px;
+    height: 25px;
+    font-size: 10px;
+    width: 80px;
+    border: 1px solid gray;
+}
+.lastest{
+    background-color: gray;
+    color: white;
+}
+.popular{
+    color: gray;
+}
+.more{
+    font-size: 18px;
+}
+.column1{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+.myrow1 , .myrow2{
+    width: calc(99%/3);
+}
+.img1{
+    width: 100%;
+    height: 100%;
+}
+.myrow3{
+    margin-left: 20px;
+    width: calc(99%/3);
+}
+main{
+    background-color: blue;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 40px;
+    height: 600px;
+}
+
+.socialLogo{
+    height: 20px;
+    width: 76px;
+    color: white;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+    border-left: 1px solid gray;
+}
+.contacts{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-bottom: 2px solid gray;
+}
+.last{
+    margin-top: 15px;
+    color: white;
+}
+.article{
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: unset;
+    height: 40px;
+    width: 150px;
+}
+.me{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+.firstColumn{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px solid gray;
+}
+.firstRow{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 1px solid gray;
+}
+.secondRow{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.fa-user{
+    margin-left: 10px;
+    color: white;
+}
+.fa-search{
+    color: white;
+    cursor: pointer;
+}
+.linkContainer{
+    display: flex;
+    flex-direction: row;
+    row-gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.p1{
+    margin: 0px;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.btn1{
+    margin-left: 8px;
+    background-color: #e059a5;
+    border-width: 0px;
+    border-radius: 9px;
+    width: 100px;
+    height: 20px;
+    color: white;
+}
+a , .ms{
+    text-decoration: none;
+    color: white;
+}
+a{
+    cursor: pointer;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
