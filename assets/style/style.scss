@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    column-gap: 30px;
+    // align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    .empty{
+        width: calc(100%/3);
+        height: 80vh;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        #fill1, #fill2 , #fill3, #fill4, #fill5{
+        background-color: blue;
+        height: 80px;
+        width: calc(100%);
+        border-radius: 10px;
+        cursor: pointer;
+        }
+    }
+    .todo{
+        background-color: lightskyblue;
+    }
+    .doing{
+        background-color: pink;
+    }
+    .done{
+        background-color: lightgreen;
+    }
+    .is-dragging{
+        border: 1px solid red;
+    }
+    .drag-over{
+        border: 1px dashed red;
+    }
+    .drop-doing{
+        background-color: palevioletred;
+    }
+}
+.enterTodo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #textTodo{
+        width: 250px;
+        height: 35px;
+    }
+    .btnSubmit{
+        height: 35px;
+        background-color: blue;
+        color: white;
+        border-width: 0px;
+    }
+}

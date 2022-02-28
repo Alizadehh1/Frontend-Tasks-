@@ -1,0 +1,96 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container .empty {
+  width: calc(100%/3);
+  height: 80vh;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+.container .empty #fill1, .container .empty #fill2, .container .empty #fill3, .container .empty #fill4, .container .empty #fill5 {
+  background-color: blue;
+  height: 80px;
+  width: calc(100%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .todo {
+  background-color: lightskyblue;
+}
+
+.container .doing {
+  background-color: pink;
+}
+
+.container .done {
+  background-color: lightgreen;
+}
+
+.container .is-dragging {
+  border: 1px solid red;
+}
+
+.container .drag-over {
+  border: 1px dashed red;
+}
+
+.container .drop-doing {
+  background-color: palevioletred;
+}
+
+.enterTodo {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enterTodo #textTodo {
+  width: 250px;
+  height: 35px;
+}
+
+.enterTodo .btnSubmit {
+  height: 35px;
+  background-color: blue;
+  color: white;
+  border-width: 0px;
+}
+/*# sourceMappingURL=style.css.map */
