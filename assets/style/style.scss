@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    .textInputContainer{
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+        #textInput{
+            width:410px;
+            height:40px;
+        }
+        #addButton{
+            width:45px;
+        }
+    }
+    .taskList{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px 0px 20px;
+        row-gap: 15px;
+        .task{
+            display: flex;
+            align-items: center;
+            width: 460px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            height: 40px;
+            border: 1px solid black;
+            #checker{
+                width: 17px;
+                height: 17px;
+            }
+            .fa-solid{
+                font-size: 17px;
+                cursor: pointer;
+            }
+            p{
+                width: calc(100% - 87px);
+                overflow-wrap: break-word;
+            }
+            .checked{
+                text-decoration: line-through;
+            }
+        }
+    }
+}

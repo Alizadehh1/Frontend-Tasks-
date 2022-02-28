@@ -1,0 +1,102 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+}
+
+.container .textInputContainer {
+  padding: 0px 20px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.container .textInputContainer #textInput {
+  width: 410px;
+  height: 40px;
+}
+
+.container .textInputContainer #addButton {
+  width: 45px;
+}
+
+.container .taskList {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 20px 0px 20px;
+  row-gap: 15px;
+}
+
+.container .taskList .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 460px;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.container .taskList .task #checker {
+  width: 17px;
+  height: 17px;
+}
+
+.container .taskList .task .fa-solid {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.container .taskList .task p {
+  width: calc(100% - 87px);
+  overflow-wrap: break-word;
+}
+
+.container .taskList .task .checked {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
