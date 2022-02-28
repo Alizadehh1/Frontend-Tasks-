@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #272526;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    // margin-top: 100px;
+    row-gap: 30px;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 0px 20px;
+    .fa-cart-shopping{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .menu{
+        cursor: pointer;
+        .fa-bars{
+            font-size: 30px;
+            color: white;
+        }
+        p{
+            margin: 0px;
+            color: white;
+        }
+    }
+    .logo{
+        img{
+            width: 120px;
+            height: auto;
+            border-radius: 40%;
+        }
+        .logoText1{
+            color: #3dbcec;
+        }
+        .logoText2{
+            color: #ffffff;
+        }
+    }
+}

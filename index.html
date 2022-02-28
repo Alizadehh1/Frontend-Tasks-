@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <script src="./bootstrap/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/javascript/script.js" defer></script>
+</head>
+<body>
+    <header class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="menu d-flex flex-column justify-content-center align-items-center">
+        <i class="fa-solid fa-bars"></i> 
+        <p>Shop</p>
+      </div>
+      <div class="logo d-flex justify-content-center align-items-center">
+        <h1 class="logoText1">Play</h1>
+        <img src="./assets/images/logo.png" alt="">
+        <h1 class="logoText2">Baku</h1>
+      </div>
+      <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/ps4.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sony Playstation 4 slim 1TB</h5>
+              <p class="card-text">449 &#8380</p>
+              <button onclick="addToBasket({name:'Sony Playstation 4 slim 1TB',price:449,id:1,count:1,image:'./assets/images/ps4.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/ps4 dualshock.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Playstation 4 Dualshock</h5>
+              <p class="card-text">99 &#8380</p>
+              <button onclick="addToBasket({name:'Playstation 4 Dualshock',price:99,id:2,count:1,image:'./assets/images/ps4 dualshock.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/ps5.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sony Playstation 5</h5>
+              <p class="card-text">1649 &#8380</p>
+              <button onclick="addToBasket({name:'Sony Playstation 5',price:1649,id:3,count:1,image:'./assets/images/ps5.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/ps5 dualsense.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Playstation 5 Dualsense</h5>
+              <p class="card-text">149 &#8380</p>
+              <button onclick="addToBasket({name:'Playstation 5 Dualsense',price:149,id:4,count:1,image:'./assets/images/ps5 dualsense.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/spiderman.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spiderman Miles-Morales</h5>
+              <p class="card-text">69 &#8380</p>
+              <button onclick="addToBasket({name:'Spiderman Miles-Morales',price:69,id:5,count:1,image:'./assets/images/spiderman.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/battlefield.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Battlefield 2042</h5>
+              <p class="card-text">79 &#8380</p>
+              <button onclick="addToBasket({name:'Battlefield 2042',price:79,id:6,count:1,image:'./assets/images/battlefield.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/valhalla.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Assanins Creed Valhalla</h5>
+              <p class="card-text">109 &#8380</p>
+              <button onclick="addToBasket({name:'Assanins Creed Valhalla',price:109,id:7,count:1,image:'./assets/images/valhalla.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/images/cod.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Call of Duty Vanguard</h5>
+              <p class="card-text">129 &#8380</p>
+              <button onclick="addToBasket({name:'Call of Duty Vanguard',price:129,id:8,count:1,image:'./assets/images/cod.webp'})" href="#" class="btn btn-primary">Səbətə əlavə edin</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
