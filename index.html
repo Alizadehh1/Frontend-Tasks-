@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Account</h1>
+        </header>
+        <div class=""></div>
+        <div class="inputs">
+            <form id="myForm" action="/">
+                <div class="userName">
+                    <label for="un">Username</label>
+                    <input type="text" name="un" id="username">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small id="usernameErr"></small>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label> 
+                    <input type="email" name="email" id="email">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small id="emailErr"></small>
+                </div>
+                <div class="pwd">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small id="pwdErr"></small>
+                </div>
+                <div class="pwd2">
+                    <label for="pwd">Password check</label>
+                    <input type="password" name="pwd" id="pwd2">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small id="pwd2Err"></small>
+                </div>
+            </form>
+            <div class="sbmt">
+                <button id="btnSubmit">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
