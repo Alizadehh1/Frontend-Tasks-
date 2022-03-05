@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <script src="./bootstrap/bootstrap.js" defer></script>
+    <script src="./assets/javascript/slider.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container row align-items-center">
+            <div class="header-left col-xl-3 col-lg-4">
+                <ul>
+                    <li class="about-us"><a href="">About Us</a></li>
+                    <li class="my-account"><a href="">My Account</a></li>
+                    <li class="wishlist"><a href="">Wishlist</a></li>
+                    <li class="order-tracking"><a href="">Order Tracking</a></li>
+                </ul>
+            </div>
+            <div class="header-center col-xl-6 col-lg-4">
+                <p>100% Secure delivery without contacting the courier</p>
+            </div>
+            <div class="header-right col-xl-3 col-lg-4">
+                <div class="header-right-1">
+                    <p>Need help? Call Us:<strong>+ 1800 900</strong></p>
+                </div>
+                <div class="header-right-2">
+                    <a href="">English</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-language">
+                        <a href=""><b>French</b></a>
+                        <a href=""><b>English</b></a>
+                        <a href=""><b>Russian</b></a>
+                    </div>
+                </div>
+                <div class="header-right-3">
+                    <a href="">USD</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-currency">
+                        <a href=""><b>Euro</b></a>
+                        <a href=""><b>USD</b></a>
+                        <a href=""><b>Rubl</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-container-2 align-items-center">
+            <div class="logo-container">
+                <img src="./assets/images/logo.svg" alt="">
+            </div>
+            <div class="search-container">
+                <div class="search d-flex">
+                    <div class="categories d-flex align-items-center">
+                        <p>All Categories</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="search-input">
+                        <input type="search" name="srch" id="srch" placeholder="Search for items...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-container-2-right d-flex">
+                <div class="compare d-flex col-3">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <p>Compare</p>
+                    <div class="compare-count d-flex justify-content-center align-items-center">
+                        3
+                    </div>
+                </div>
+                <div class="wishlist d-flex col-3">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Wishlist</p>
+                    <div class="wishlist-count d-flex justify-content-center align-items-center">
+                        6
+                    </div>
+                </div>
+                <div class="cart d-flex">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                    <div class="product-count d-flex justify-content-center align-items-center">
+                        2
+                    </div>
+                </div>
+                <div class="account d-flex col-3">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Account</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation-container d-flex align-items-center">
+            <div class="main-categories d-flex justify-content-evenly align-items-center">
+                <i class="fa-solid fa-border-all"></i>
+                <p>Browse All Categories</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="main-menu d-flex">
+                <div class="hot-deals d-flex align-items-center">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-hot.svg" alt="">
+                    <a href="#"><b>Hot Deals</b></a>
+                </div>
+                <div class="home d-flex align-items-center justify-content-between">
+                    <div class="homeLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Home</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="home-dropdown dropDown">
+                        <a href="#"><b>Home 1</b> </a>
+                        <a href="#"><b>Home 2</b> </a>
+                        <a href="#"><b>Home 3</b> </a>
+                        <a href="#"><b>Home 4</b> </a>
+                        <a href="#"><b>Home 5</b> </a>
+                        <a href="#"><b>Home 6</b> </a>
+                    </div>
+                </div>
+                <div class="about d-flex align-items-center">
+                    <a href="#"><b>About</b></a>
+                </div>
+                <div class="shop d-flex align-items-center justify-content-between">
+                    <div class="shopLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Shop</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="shop-dropdown dropDown">
+                        <a href="#"><b>Shop Grid - Right Sidebar</b> </a>
+                        <a href="#"><b>Shop Grid - Left Sidebar</b> </a>
+                        <a href="#"><b>Shop List - Right Sidebar</b> </a>
+                        <a href="#"><b>Shop List - Left Sidebar</b> </a>
+                        <a href="#"><b>Shop Wide</b> </a>
+                        <a href="#"><b>Single Product</b> </a>
+                        <a href="#"><b>Shop - Filter</b> </a>
+                        <a href="#"><b>Shop - Wishlist</b> </a>
+                        <a href="#"><b>Shop - Cart</b> </a>
+                        <a href="#"><b>Shop - Checkout</b> </a>
+                        <a href="#"><b>Shop - Compare</b> </a>
+                        <a href="#"><b>Shop Invoice</b> </a>
+                    </div>
+                </div>
+                <div class="vendors d-flex align-items-center justify-content-between">
+                    <div class="vendorsLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Vendors</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="vendors-dropdown dropDown">
+                        <a href="#"><b> Vendors Grid</b></a>
+                        <a href="#"><b> Vendors List</b> </a>
+                        <a href="#"><b> Vendor Details 01</b></a>
+                        <a href="#"><b> Vendor Details 02</b></a>
+                        <a href="#"><b> Vendor Dashboard</b></a>
+                        <a href="#"><b> Vendor Guide</b></a>
+                    </div>
+                </div>
+                <div class="mega-menu d-flex align-items-center justify-content-between">
+                    <a href="#"><b>Mega menu</b></a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="blog d-flex align-items-center justify-content-between">
+                    <div class="blogLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Blog</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="blog-dropdown dropDown">
+                        <a href="#"><b>Blog Category Grid</b></a>
+                        <a href="#"><b>Blog Category List</b></a>
+                        <a href="#"><b>Blog Category Big</b></a>
+                        <a href="#"><b>Blog Category Wide</b></a>
+                        <a href="#"><b>Single Post</b></a>
+                    </div>
+                </div>
+                <div class="pages d-flex align-items-center justify-content-between">
+                    <div class="pagesLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Pages</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="pages-dropdown dropDown">
+                        <a href="#"><b>About Us</b></a>
+                        <a href="#"><b>Contact</b></a>
+                        <a href="#"><b>My Account</b></a>
+                        <a href="#"><b>Login</b></a>
+                        <a href="#"><b>Register</b></a>
+                        <a href="#"><b>Purchase Guide</b></a>
+                        <a href="#"><b>Privacy Policy</b></a>
+                        <a href="#"><b>Terms of Service</b></a>
+                        <a href="#"><b>404 Page</b></a>
+                    </div>
+                </div>
+                <div class="contact d-flex align-items-center justify-content-center">
+                    <a href="#"><b>Contact</b></a>
+                </div>
+            </div>
+            <div class="call-center d-flex">
+                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-headphone.svg" alt="">
+                <div class="call-center-texts d-block">
+                    <p>1900 - 888</p>
+                    <span>24/7 Support Center</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="slider">  
+            <div class="banner-slider-container">
+                <div class="banner-slider-1">
+                    <div class="onbanner-container d-flex flex-column">
+                        <div class="headerText">
+                            <h1><b>Don't miss amazing <br>grocery deals</b></h1>
+                        </div>
+                        <div class="paragraph">
+                            <p>Sign up for the daily newsletter</p>
+                        </div>
+                        <div class="subscribe d-flex">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <input type="text" name="" id="" placeholder="Your email address">
+                            <button class="btnSubscribe">Subscribe</button>
+                        </div>
+                    </div>
+                    <button type="button" class="slider-prev">
+                        <i class="fa-solid fa-angle-left"></i>       
+                    </button>
+                    <img src="./assets/images/slider-1.png" alt="">
+                    <button type="button" class="slider-next">
+                        <i class="fa-solid fa-angle-right"></i>       
+                    </button>
+                </div>
+                <div class="banner-slider-2">
+                    <div class="onbanner-container d-flex flex-column">
+                        <div class="headerText">
+                            <h1><b>Fresh Vegetables <br>Big discount</b></h1>
+                        </div>
+                        <div class="paragraph">
+                            <p>Save up to 50% off on your first order</p>
+                        </div>
+                        <div class="subscribe d-flex">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <input type="text" name="" id="" placeholder="Your email address">
+                            <button class="btnSubscribe">Subscribe</button>
+                        </div>
+                    </div>
+                    <button type="button" class="slider-prev2">
+                        <i class="fa-solid fa-angle-left"></i>       
+                    </button>
+                    <img src="./assets/images/slider-2.png" alt="">
+                    <button type="button" class="slider-next2">
+                        <i class="fa-solid fa-angle-right"></i>      
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="featured-categories">
+            <div class="textAndLinks d-flex">
+                <div class="headText">
+                    <h1><b>Featured Categories</b></h1>
+                </div>
+                <div class="links d-flex align-items-end justify-content-between">
+                    <a href="#">Cake & Milk</a>
+                    <a href="#">Coffes & Teas</a>
+                    <a class="pet-foods" href="#">Pet Foods</a>
+                    <a href="#">Vegetables</a>
+                </div>
+                <div class="arrows d-flex justify-content-end">
+                    <div class="arrowPrev d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="arrowNext d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider d-flex">
+                <div class="card-1 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Cake & Milk</a></h6>
+                        <p>26 items</p>
+                    </div>
+                </div>
+                <div class="card-2 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-12.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Organic Kiwi</a></h6>
+                        <p>28 items</p>
+                    </div>
+                </div>
+                <div class="card-3 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Peach</a></h6>
+                        <p>14 items</p>
+                    </div>
+                </div>
+                <div class="card-4 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Red Apple</a></h6>
+                        <p>54 items</p>
+                    </div>
+                </div>
+                <div class="card-5 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Snack</a></h6>
+                        <p>56 items</p>
+                    </div>
+                </div>
+                <div class="card-6 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Vegetables</a></h6>
+                        <p>72 items</p>
+                    </div>
+                </div>
+                <div class="card-7 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Strawberry</a></h6>
+                        <p>36 items</p>
+                    </div>
+                </div>
+                <div class="card-8 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Black Plum</a></h6>
+                        <p>123 items</p>
+                    </div>
+                </div>
+                <div class="card-9 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Custard Apple</a></h6>
+                        <p>34 items</p>
+                    </div>
+                </div>
+                <div class="card-10 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-14.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Coffe & Tea</a></h6>
+                        <p>89 items</p>
+                    </div>
+                </div>
+                <div class="card-11 categories-card">
+                    <div class="card-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-15.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card-texts">
+                        <h6><a href="">Headphone</a></h6>
+                        <p>87 items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banners d-flex">
+            <div class="banner-1 d-flex align-items-center col-lg-4 col-md-6">
+                <div class="banner-text">
+                    <h1>Everyday Fresh & <br>Clean with Our <br>Products</h1>
+                    <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-2 d-flex align-items-center col-lg-4 col-md-6">
+                <div class="banner-text">
+                    <h1>Make your Breakfast<br>Healthy and Easy</h1>
+                    <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-3 d-flex align-items-center col-lg-4 d-md-none d-lg-flex">
+                <div class="banner-text">
+                    <h1>The best Organic<br>Products Online</h1>
+                    <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="popular-products">
+            <div class="textAndLinksOfProducts d-flex align-items-center justify-content-between">
+                <div class="headerText">
+                    <h1><b>Popular Products</b></h1>
+                </div>
+                <div class="linksOfProducts d-flex justify-content-between">
+                    <a style="color: #3bb77e;" href="#">All</a>
+                    <a href="#">Milks & Dairies</a>
+                    <a href="#">Coffes & Teas</a>
+                    <a href="#">Pet Foods</a>
+                    <a href="#">Meats</a>
+                    <a href="#">Vegetables</a>
+                    <a href="#">Fruits</a>
+                </div>
+            </div>
+            <div class="products d-flex">
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg" alt="">
+                        </a>
+                        <div class="hot">
+                            Hot
+                        </div>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Snack</a>
+                        </div>
+                        <h1>Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>NestFood</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$28.85</span>
+                                <span class="old-price">$32.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg" alt="">
+                        </a>
+                        <div class="sale">
+                            Sale
+                        </div>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Hodo Foods</a>
+                        </div>
+                        <h1>All Natural Italian-Style Chicken Meatballs</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>Stouffer</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$52.85</span>
+                                <span class="old-price">$55.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-1.jpg" alt="">
+                        </a>
+                        <div class="new">
+                            New
+                        </div>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Snack</a>
+                        </div>
+                        <h1>Angie’s Boomchickapop Sweet & Salty Kettle Corn</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>StarKist</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$48.85</span>
+                                <span class="old-price">$52.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Vegetables</a>
+                        </div>
+                        <h1>Foster Farms Takeout Crispy Classic Buffalo Wings</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>NestFood</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$17.85</span>
+                                <span class="old-price">$19.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg" alt="">
+                        </a>
+                        <div class="dealBadge">
+                            -14%
+                        </div>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Pet Foods</a>
+                        </div>
+                        <h1>Blue Diamond Almonds Lightly Salted Vegetables</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>NestFood</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$23.85</span>
+                                <span class="old-price">$25.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Hodo Foods</a>
+                        </div>
+                        <h1>Chobani Complete Vanilla Greek Yogurt</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>NestFood</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$54.85</span>
+                                <span class="old-price">$55.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Meats</a>
+                        </div>
+                        <h1>Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>NestFood</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$32.85</span>
+                                <span class="old-price">$33.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-1.jpg" alt="">
+                        </a>
+                        <div class="sale">
+                            Sale
+                        </div>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Snack</a>
+                        </div>
+                        <h1>Encore Seafoods Stuffed Alaskan Salmon</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>NestFood</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$35.85</span>
+                                <span class="old-price">$37.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-1.jpg" alt="">
+                        </a>
+                        <div class="hot">
+                            Hot
+                        </div>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Coffes</a>
+                        </div>
+                        <h1>Gorton’s Beer Battered Fish Fillets with soft paper</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>Old El Paso</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$23.85</span>
+                                <span class="old-price">$25.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-image">
+                        <a href="">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content d-flex flex-column justify-content-between">
+                        <div class="product-category">
+                            <a href="#">Cream</a>
+                        </div>
+                        <h1>Haagen-Dazs Caramel Cone Ice Cream Ketchup</h1>
+                        <div class="product-rate d-flex">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <p>(5.0)</p>
+                        </div>
+                        <div>
+                           <p>By <strong>Tyson</strong> </p> 
+                        </div>
+                        <div class="product-cart-bottom d-flex justify-content-between">
+                            <div class="product-price d-flex align-items-center justify-content-between">
+                                <span class="new-price">$22.85</span>
+                                <span class="old-price">$24.8</span>
+                            </div>
+                            <div class="add-to-basket">
+                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="daily-best-sells">
+            <div class="best-seller-textAndLinks d-flex justify-content-between">
+                <div class="best-seller-header-text">
+                    <h1><b>Daily Best Sells</b></h1>
+                </div>
+                <div class="best-seller-links d-flex align-items-center justify-content-between">
+                    <a href="#">Featured</a>
+                    <a href="#">Popular</a>
+                    <a href="#">New added</a>
+                </div>
+            </div>
+            <div class="daily-best-sells-container">
+                <div class="daily-best-sells-banner col-lg-3">
+                    <div class="banner-text">
+                        <h1>Bring nature into your home</h1>
+                        <a class="btn" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="daily-best-sells-slider">
+                    <button class="btn slider-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="product-1 card-type-2">
+                            <div class="card-top">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="product-category"><p>Hodo Foods</p></div>
+                                <h1>Seeds of Change Organic Quinoa, Brown</h1>
+                                <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                <div class="product-price">
+                                    <span class="new-price">$238.85</span>
+                                    <span class="old-price">$245.8</span>
+                                </div>
+                                <div class="fullPercentage">
+                                    <div class="sell-average">
+    
+                                    </div>
+                                    <p>Sold:90/120</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="product-2 card-type-2">
+                            <div class="card-top">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="product-category"><p>Hodo Foods</p></div>
+                                <h1>All Natural Italian-Style Chicken Meatballs</h1>
+                                <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                <div class="product-price">
+                                    <span class="new-price">$238.85</span>
+                                    <span class="old-price">$245.8</span>
+                                </div>
+                                <div class="fullPercentage">
+                                    <div class="sell-average">
+    
+                                    </div>
+                                    <p>Sold:90/120</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="product-3 card-type-2">
+                            <div class="card-top">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="product-category"><p>Hodo Foods</p></div>
+                                <h1>Angie’s Boomchickapop Sweet and womnies</h1>
+                                <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                <div class="product-price">
+                                    <span class="new-price">$238.85</span>
+                                    <span class="old-price">$245.8</span>
+                                </div>
+                                <div class="fullPercentage">
+                                    <div class="sell-average">
+    
+                                    </div>
+                                    <p>Sold:90/120</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="product-4 card-type-2">
+                            <div class="card-top">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-1.jpg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="product-category"><p>Hodo Foods</p></div>
+                                <h1>Foster Farms Takeout Crispy Classic </h1>
+                                <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                <div class="product-price">
+                                    <span class="new-price">$238.85</span>
+                                    <span class="old-price">$245.8</span>
+                                </div>
+                                <div class="fullPercentage">
+                                    <div class="sell-average">
+    
+                                    </div>
+                                    <p>Sold:90/120</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+    
+                                </div>
+                            </div>
+                    </div>
+                    <!-- <div class="product-5 card-type-2">
+                        <div class="card-top">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg" alt="">
+                        </div>
+                        <div class="card-bottom">
+                            <div class="product-category"><p>Hodo Foods</p></div>
+                            <h1>Blue Diamond Almonds Lightly Salted</h1>
+                            <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                            <div class="product-price">
+                                <span class="new-price">$238.85</span>
+                                <span class="old-price">$245.8</span>
+                            </div>
+                            <div class="fullPercentage">
+                                <div class="sell-average">
+                                
+                                </div>
+                                <p>Sold:90/120</p>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <button class="btn slider-next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="deals-of-the-day">
+            <div class="deals-of-the-day-textAndLinks d-flex">
+                <div class="deals-of-the-day-header-text">
+                    <h1>Deals Of The Day</h1>
+                </div>
+                <div class="deals-of-the-day-link d-flex">
+                    <a href="#">All Deals</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
