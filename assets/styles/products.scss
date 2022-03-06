@@ -76,9 +76,12 @@ main{
                 height: 45px;
                 border-radius: 50%;
                 border: 0px;
-                background-color: #3Bb77e;
+                background-color: white;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
                 i{
-                    color: white;
+                    color: #7e7e7e;
                 }
             }
             .slider-next{
@@ -88,13 +91,17 @@ main{
                 height: 45px;
                 border-radius: 50%;
                 border: 0px;
-                background-color: #3Bb77e;
+                background-color: white;
                 z-index: 1;
                 top: calc(50% - 45px);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
                 i{
-                    color: white;
+                    color: #7e7e7e;
                 }
             }
+            
         }
         .banner-slider-2{
             .onbanner-container{
@@ -160,9 +167,12 @@ main{
                 height: 45px;
                 border-radius: 50%;
                 border: 0px;
-                background-color: #3Bb77e;
+                background-color: white;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
                 i{
-                    color: white;
+                    color: #7e7e7e;
                 }
             }
             .slider-next2{
@@ -171,12 +181,15 @@ main{
                 height: 45px;
                 border-radius: 50%;
                 border: 0px;
-                background-color: #3Bb77e;
+                background-color: white;
                 z-index: 1;
                 top: calc(50% - 45px);
                 right: 15px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
                 i{
-                    color: white;
+                    color: #7e7e7e;
                 }
             }
         }
@@ -190,6 +203,20 @@ main{
             height: 100%;
         border-radius: 30px;
 
+        }
+    }
+    .banner-slider-container:hover{
+        .slider-prev, .slider-prev2, .slider-next, .slider-next2{
+            visibility: visible;
+            opacity: 100;
+        }
+    }
+    .banner-slider-container{
+        .slider-prev:hover, .slider-prev2:hover, .slider-next:hover, .slider-next2:hover{
+            background-color: #3BB77E;
+            i{
+                color: white;
+            }
         }
     }
 }
@@ -219,6 +246,11 @@ main{
                 font-size: 16px;
                 color: #253d4e;
                 font-weight: 700;
+                transition: 0.2s;
+            }
+            a:hover{
+                margin-bottom: 8px;
+                color: #3BB77E;
             }
         }
         .arrows{
@@ -233,8 +265,16 @@ main{
                 border-radius: 50%;
                 cursor: pointer;
                 background-color: #F2F3F4;
+                transition: 0.3s;
                 i{
                     color: rgb(126, 126, 126);
+                    transition: 0.3s;
+                }
+            }
+            .arrowPrev:hover, .arrowNext:hover{
+                background-color: #3BB77E;
+                i{
+                    color: white;
                 }
             }
             
@@ -278,6 +318,16 @@ main{
         .slick-prev, .slick-next {
             display: none !important;
         }
+        .categories-card:hover{
+            border: 0.1px solid #3BB77E;
+            .card-texts{
+                h6{
+                    a{
+                        color: #3BB77E;
+                    }
+                }
+            }
+        }
         .categories-card{
             display: flex;
             flex-direction: column;
@@ -287,6 +337,7 @@ main{
             padding: 20px 0px 18px 0px;
             margin: 0px 12px 20px 12px;
             border-radius: 10px;
+            transition: 0.3s;
             .card-image{
                 width: 100%;
                 height: 87.2px;
@@ -296,9 +347,13 @@ main{
                         align-items: center;
                         justify-content: center;
                     img{
-                        
                         width: 80px;
                         height: 80px;
+                        transition: 0.5s;
+                    }
+                    img:hover{
+                        width: 83px;
+                        height: 83px;
                     }
                 }
             }
@@ -308,6 +363,7 @@ main{
                         font-size: 16px;
                         font-weight: 700;
                         color: #253d4e;
+                        transition: 0.3s;
                     }
                 }
                 p{
@@ -351,7 +407,9 @@ main{
                 height: 100px;
                 font-weight: 700;
                 margin-bottom: 15px;
+                transition: 0.3s;
             }
+            
             .btn{
                 background-color: rgb(59, 183, 126);
                 width: 103.61px;
@@ -359,9 +417,24 @@ main{
                 font-size: 12px;
                 color: white;
                 font-weight: 700;
+                transition: 0.3s;
                 i{
-                    font-size: 8px;
+                    font-size: 10px;
+                    margin-left: 9px;
                 }
+            }
+            .btn:hover{
+                width: 108.61px;
+                background-color: rgb(253, 192, 64);
+            }
+        }
+        .banner-text:hover{         //108.61
+            h1{
+                margin-top: -5px;
+            }
+
+            .btn{
+                margin-top: 5px;
             }
         }
     }
@@ -406,6 +479,11 @@ main{
             a{
                 color: #253d4e;
                 font-weight: 700;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: #3Bb77e;
+                padding-bottom: 20px;
             }
         }
     }
@@ -564,39 +642,44 @@ main{
     .daily-best-sells-container{
         display: flex;
         flex-direction: row;
-        width: 100%;
+        // width: 1108px;
         height: 523.2px;
         column-gap: 12px;
+        position: relative;
+        .daily-best-sells-slider-prev, .daily-best-sells-slider-next{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            
+            background-color: #f2f3f4;
+            color: rgb(126, 126, 126);
+            top: 170px
+        }
+        .daily-best-sells-slider-prev{
+            left: 411.8px;
+            z-index: 2;
+        }
+        .daily-best-sells-slider-next{
+            right: 20px;
+        }
         .daily-best-sells-slider{
-            height: 100%;
-            max-width: 1108px;
+            height: 523.2px;
+            width: 1108px;
             display: flex;
             flex-direction: row;
-            position: relative;
             column-gap: 20px;
             .slick-prev, .slick-next{
                 display: none !important;
             }
-            .slider-prev, .slider-next{
-                position: absolute;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                
-                background-color: #f2f3f4;
-                color: rgb(126, 126, 126);
-                top: 170px
-            }
-            .slider-prev{
-                left: 20px;
-            }
-            .slider-next{
-                right: 20px;
-            }
             
-            .card-type-2{
-                width: calc((100% - 72px)/4);
+            .salam{
+                width: 259px;
                 height: 501.2px;
+            }
+            .card-type-2{
+                width: 100%;
+                height: 100%;
                 border-radius: 15px;
                 border: 1px solid rgb(236, 236, 236);
                 .card-top{
@@ -620,6 +703,7 @@ main{
                         font-weight: 400;
                         color: #7e7e7e;
                         height: 24px;
+                        width: 100%;
                     }
                     h1{
                         color: #253d4e;
@@ -628,13 +712,15 @@ main{
                         margin-bottom: 5px;
                     }
                     .product-rate{
+                        height: 12px;
+                        width: 100%;
                         i{
                             font-size: 12px;
                             color: #fdc040;
                         }
                     }
                     .product-price{
-                        width: 219px;
+                        width: 100%;
                         height: 29.8px;
                         margin-top: 10px;
                         padding-top: 5px;
@@ -721,6 +807,7 @@ main{
     }
 }
 .deals-of-the-day{
+    padding: 0px 12px;
     padding-top: 25px;
     padding-bottom: 5px;
     .deals-of-the-day-textAndLinks{
@@ -731,6 +818,277 @@ main{
             margin-right: 30px;
             h1{
                 font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        .deals-of-the-day-link{
+            width: 81.84px;
+            height: 24px;
+            a{
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Lato;
+            color: #7e7e7e;
+                
+            }
+            i{
+                font-size: 12px;
+            color: #7e7e7e;
+
+            }
+        }
+    }
+    .deals-of-the-day-products{
+        position: relative;
+        height: 442.48px;
+        column-gap: 24px;
+        .deals-of-the-day-product{
+            position: relative;
+            width: 355.8px;
+            height: 100%;
+            .deals-of-the-day-product-image{
+                width: 100%;
+                height: 315.08px;
+                border-radius: 15px;
+            }
+            .deals-of-the-day-product-image-1{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-5.png');
+                background-size: cover;
+            }
+            .deals-of-the-day-product-image-2{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-6.png');
+                background-size: cover;
+            }
+            .deals-of-the-day-product-image-3{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-7.png');
+                background-size: cover;
+            }
+            .deals-of-the-day-product-image-4{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-8.png');
+                background-size: cover;
+            }
+            .deals-of-the-day-product-content-container{
+                width: 305.99px;
+                height: 192.4px;
+                position: absolute;
+                left: 24.905px;
+                bottom: 25px;
+                .deals-of-the-day-product-content{
+                    width: 100%;
+                    height: 100%;
+                    padding: 25px 30px;
+                    background-color: white;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 15px rgb(233, 233, 233);
+                    .product-rate{
+                        height: 24px;
+                        margin-top: 12px;
+                        i{
+                            font-size: 12px;
+                            color: #fdc040;
+                        }
+                        p{
+                            font-size: 14px;
+                            font-family: Lato;
+                            color: #b6b6b6;
+                            margin-left: 5px;
+                        }
+                    }
+                    div{
+                        height: 24px;
+                        p{
+                            font-size: 14px;
+                            font-family: Lato;
+                            color: #b6b6b6;
+                            strong{
+                                color: #3Bb77e;
+                            }
+                        }
+                    }
+                    h1{
+                        font-size: 16px;
+                        font-family: Quicksand;
+                        font-weight: 700;
+                        color: #253d4e;
+                    }
+                    .deals-of-the-day-product-content-bottom{
+                        width: 237.84px;
+                        height: 36px;
+                        margin-top: 15px;
+                        .product-price{
+                            width: 101.4px;
+                            .new-price{
+                                font-size: 18px;
+                                font-family: Quicksand;
+                                color: #3Bb77e;
+                                font-weight: 700;
+                            }
+                            .old-price{
+                                margin-left: 7px;
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: rgb(173, 173, 173);
+                                text-decoration: line-through;
+                            }
+                        }
+                        .add-to-basket{
+                            width: 84.9px;
+                            height: 36px;
+                            .addToBasket{
+                                width: 100%;
+                                height: 100%;
+                                border: 0px;
+                                border-radius: 4px;
+                                background-color: rgb(222, 249, 236);
+                                color: #3Bb77e;
+                                font-size: 14px;
+                                font-weight: 700;
+                                i{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .deals-of-the-day-product-countdown{
+                    position: absolute;
+                    bottom: 212.4px;
+                    width: 100%;
+                    height: 65px;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .countdown{
+                        width: 60px;
+                        height: 64.4px;
+                        border-radius: 4px;
+                        background-color: white;
+                        .countdown-amount{
+                            font-size: 20px;
+                            color: #3BB77E;
+                        }
+                        .countdown-period{
+                            font-size: 16px;
+                            color: #253d4e;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.top-products{
+    padding: 25px 12px;
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 30px;
+    .topProduct{
+        width: 355.8px;
+        height: 449.16px;
+        h1{
+            height: 49.8px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .top-selling-product{
+            width: 355.8px;
+            height: 109.79px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            .top-selling-product-image{
+                width: 126.59px;
+                height: 100%;
+                border-radius: 10px;
+            }
+            .top-selling-product1-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-1.jpg');
+                background-size: cover;
+            }
+            .top-selling-product2-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-2.jpg');
+                background-size: cover;
+            }
+            .top-selling-product3-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-3.jpg');
+                background-size: cover;
+            }
+            .trending-products-product1-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-4.jpg');
+                background-size: cover;
+            }
+            .trending-products-product2-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-5.jpg');
+                background-size: cover;
+            }
+            .trending-products-product3-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-6.jpg');
+                background-size: cover;
+            }
+            .recently-added-product1-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-7.jpg');
+                background-size: cover;
+            }
+            .recently-added-product2-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-8.jpg');
+                background-size: cover;
+            }
+            .recently-added-product3-image{
+                background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-9.jpg');
+                background-size: cover;
+            }
+            .top-selling-product-content{
+                width: 253.19px;
+                height: 97.2px;
+                padding: 0px 12px;
+                span{
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 700;
+                    border: 0px;
+                    height: 38.4px;
+                }
+                .top-selling-product-content-rating{
+                    display: flex;
+                    width: 229.19px;
+                    height: 24px;
+                    align-items: center;
+                    i{
+                        font-size: 12px;
+                        color: #fdc040;
+                    }
+                    p{
+                        margin-left: 5px;
+                        font-size: 14px;
+                        color: rgb(182, 182, 182);
+                        font-family: Lato,sans-serif;
+                    }
+                }
+                .top-selling-product-price{
+                    width: 229.19px;
+                    height: 24.8px;
+                    margin-top: 10px;
+                    .new-price{
+                        color: #3BB77E;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .old-price{
+                        margin-left: 5px;
+                        text-decoration: line-through;
+                        color: #ADADAD;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

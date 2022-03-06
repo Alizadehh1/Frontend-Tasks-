@@ -34,10 +34,16 @@ $('.product-slider').slick({
     slidesToScroll: 1
 });
 
+document.querySelector('.daily-best-sells-slider-prev').addEventListener('click', function() {
+document.querySelector('.daily-best-sells-slider').firstChild.click();
+});
 
+document.querySelector('.daily-best-sells-slider-next').addEventListener('click', function() {
+document.querySelector('.daily-best-sells-slider').lastChild.click();
+});
 
 $('.daily-best-sells-slider').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow:4,
     slidesToScroll: 1,
 });

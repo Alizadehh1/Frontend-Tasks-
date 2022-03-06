@@ -42,6 +42,12 @@ header {
   font-size: 13px;
   font-family: Lato;
   color: #7e7e7e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-container .header-left ul li a:hover {
+  color: black;
 }
 
 .header-container .header-left ul .about-us {
@@ -74,6 +80,46 @@ header {
           justify-content: flex-end;
 }
 
+.header-container .header-right .drop-down {
+  position: absolute;
+  top: 13.8px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  right: -19.5px;
+  bottom: -91px;
+  width: 120px;
+  height: 91px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ececec;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.header-container .header-right .drop-down a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #253D4E !important;
+}
+
+.header-container .header-right .drop-down a img {
+  width: 15px;
+  height: 9.9px;
+  margin-right: 5px;
+}
+
 .header-container .header-right .header-right-1 {
   border-right: 1px solid #7e7e7e;
 }
@@ -95,45 +141,17 @@ header {
 
 .header-container .header-right .header-right-2 a {
   color: #7e7e7e;
-}
-
-.header-container .header-right .header-right-2 .dropdown-language {
-  position: absolute;
-  top: 25px;
-  padding: 15px;
-  right: -20px;
-  width: 80px;
-  height: 100px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid #ececec;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 1;
-}
-
-.header-container .header-right .header-right-2 .dropdown-language a {
-  font-size: 15px;
-  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-container .header-right .header-right-2:hover .dropdown-language {
   opacity: 100;
   visibility: visible;
+}
+
+.header-container .header-right .header-right-2:hover a {
+  color: black;
 }
 
 .header-container .header-right .header-right-3 {
@@ -145,44 +163,17 @@ header {
 
 .header-container .header-right .header-right-3 a {
   color: #7e7e7e;
-}
-
-.header-container .header-right .header-right-3 .dropdown-currency {
-  position: absolute;
-  top: 25px;
-  padding: 15px;
-  right: -20px;
-  width: 80px;
-  height: 100px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid #ececec;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header-container .header-right .header-right-3 .dropdown-currency a {
-  font-size: 15px;
-  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-container .header-right .header-right-3:hover .dropdown-currency {
   opacity: 100;
   visibility: visible;
+}
+
+.header-container .header-right .header-right-3:hover a {
+  color: black;
 }
 
 .header-container-2 {
@@ -608,5 +599,19 @@ header {
   font-size: 12px;
   font-family: Lato;
   color: #7e7e7e;
+}
+
+.subscribe {
+  background-color: white;
+  border-radius: 50px;
+}
+
+.subscribe .btnSubscribe:hover {
+  background-color: #29A56C !important;
+}
+
+.subscribe .btnSubscribe {
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 /*# sourceMappingURL=header.css.map */
