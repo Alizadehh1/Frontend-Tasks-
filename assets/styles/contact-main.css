@@ -1,0 +1,319 @@
+.page-location-container {
+  height: 66.6px;
+  padding: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-location-container .page-location {
+  padding: 0px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250.26px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-location-container .page-location a {
+  width: 58.73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-location-container .page-location a i {
+  color: #3BB77E;
+  font-size: 14px;
+}
+
+.page-location-container .page-location a p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3BB77E;
+}
+
+.page-location-container .page-location i {
+  font-size: 9px;
+  color: #7e7e7e;
+}
+
+.page-location-container .page-location p {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.faqs-container {
+  height: 408px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.faqs-container .how-can-help-you {
+  width: 421.99px;
+  height: 358px;
+  padding: 0px 12px;
+}
+
+.faqs-container .how-can-help-you h2 {
+  color: #3BB77E;
+  line-height: 28.8px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faqs-container .how-can-help-you h1 {
+  color: #253d4e;
+  line-height: 57.6px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.faqs-container .how-can-help-you p {
+  color: #7e7e7e;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.faqs-container .how-can-help-you .firstParaghraph {
+  margin-bottom: 20px;
+}
+
+.faqs-container .faqs {
+  width: 867.99px;
+  height: 256px;
+  padding: 0px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.faqs-container .faqs .faq {
+  width: 421.99px;
+  height: 116px;
+  padding: 0px 12px;
+}
+
+.faqs-container .faqs .faq h1 {
+  color: #253d4e;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faqs-container .faqs .faq p {
+  color: #7e7e7e;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.faqs-container .faqs .faq1, .faqs-container .faqs .faq2 {
+  margin-bottom: 24px;
+}
+
+.faqs-container .faqs .faq3 h1 {
+  color: #3BB77E;
+}
+
+.map {
+  height: 350px;
+  padding: 0px 12px;
+  margin-bottom: 50px;
+}
+
+.map iframe {
+  border-radius: 15px;
+}
+
+.page-contact-container {
+  height: 874.6px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-contact-container .contacts {
+  height: 199.4px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-contact-container .contacts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 421.99px;
+  height: 100%;
+  padding: 0px 12px;
+}
+
+.page-contact-container .contacts div h1 {
+  margin-bottom: 15px;
+  color: #3BB77E;
+  line-height: 28.8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-contact-container .contacts div p {
+  color: #7e7e7e;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-contact-container .contacts div a {
+  width: 116.26px;
+  height: 39.6px;
+  background-color: #3BB77E;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 21.6px;
+}
+
+.page-contact-container .contacts div a i {
+  margin-right: 5px;
+}
+
+.page-contact-container .contact-form-container {
+  height: 615.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-contact-container .contact-form-container .contact-form {
+  height: 100%;
+  width: 843.99px;
+  padding: 0px 12px;
+}
+
+.page-contact-container .contact-form-container .contact-form form {
+  width: 843.99px;
+  height: 469.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-contact-container .contact-form-container .contact-form form div {
+  width: 421.99px;
+  height: 84px;
+  padding: 0px 12px;
+}
+
+.page-contact-container .contact-form-container .contact-form form div input {
+  height: 64px;
+  width: 100%;
+  padding: 1px 2px 1px 20px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+
+.page-contact-container .contact-form-container .contact-form form .textbox {
+  width: 843.99px;
+  height: 200px;
+  padding: 0px 12px;
+  margin-bottom: 30px;
+}
+
+.page-contact-container .contact-form-container .contact-form form .textbox textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.page-contact-container .contact-form-container .contact-form form button {
+  width: 196.64px;
+  height: 64px;
+  background-color: #253d4e;
+  padding: 20px 40px;
+  margin-left: 12px;
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.page-contact-container .contact-form-container .contact-form h2 {
+  color: #3BB77E;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 700;
+}
+
+.page-contact-container .contact-form-container .contact-form h1 {
+  color: #253d4e;
+  margin-bottom: 10px;
+  line-height: 48px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page-contact-container .contact-form-container .contact-form p {
+  line-height: 24px;
+  color: #7e7e7e;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-contact-container .contact-form-container .contact-image {
+  width: 421.99px;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 12px;
+}
+
+.page-contact-container .contact-form-container .contact-image img {
+  border-radius: 15px;
+  height: 391.68px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=contact-main.css.map */

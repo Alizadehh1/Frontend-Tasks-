@@ -1,0 +1,230 @@
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 2;
+}
+.navigation-container{
+    width: 100%;
+    height: 70.8px;
+    padding: 0px 12px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    .main-categories{
+        cursor: pointer;
+        font-family: Quicksand;
+        width: 255.43px;
+        height: 44px;
+        background-color: rgb(59, 183, 126);
+        border-radius: 5px;
+        color: white;
+        margin-right: 35px;
+        i{
+            font-size: 18px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .main-menu{
+        flex-wrap: wrap;
+        width: 963.66px;
+        height: 100%;
+        a{
+            font-size: 16px;
+            font-family: Quicksand;
+            color: #253D4E;
+        }
+        .hot-deals{
+            width: 133.68px;
+            padding-right: 30px;
+            a{
+                width: 75.68px;
+                margin-left: 9px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+        }
+        .hot-deals a:hover{
+            color: #3bb77e;
+            
+        }
+        .dropDown{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            top: 50.6px;
+            margin-top: 30px;
+            padding: 25px 15px;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: 0.35s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            z-index: 1;
+            background-color: white;
+            a{
+                font-size: 14px;
+                color: rgb(37, 61, 78);
+            }
+        }
+        .home{
+            position: relative;
+            padding: 0px 17px;
+            width: 96.16px;
+            cursor: pointer;
+            i{
+                color: #3bb77e;
+                font-size: 8px;
+            }
+            a{
+                color: #3bb77e;
+            }
+            .homeLink{
+                width: 100%;
+                height: 100%;
+            }
+            .home-dropdown{
+                
+                width: 250px;
+                height: 241px;
+               
+                a{
+                    font-size: 14px;
+                    color: rgb(37, 61, 78);
+                }
+            }
+        }
+        .home:hover{
+            .home-dropdown{
+                opacity: 100;
+                visibility: visible;
+            }
+        }
+        .about{
+            padding: 0px 17px;
+            width: 80.2px;
+            a{
+                cursor: pointer;
+                transition: 0.25s;
+            }
+        }
+        .about a:hover{
+            color: #3bb77e;
+        }
+        .shop, .vendors, .mega-menu, .blog, .pages, .contact{
+            padding: 0px 17px;
+            width: 89.45px;
+            a{
+                cursor: pointer;
+                transition: 0.25s;
+            }
+            i{
+                color: #253D4E;
+                font-size: 8px;
+            }
+        }
+        .shop a:hover, .vendors a:hover, .mega-menu a:hover, .blog a:hover, .pages a:hover, .contact a:hover{
+            color: #3bb77e;
+        }
+        .shop{
+            position: relative;
+            .shopLink{
+                width: 100%;
+                height: 100%;
+            }
+            .shop-dropdown{
+                width: 250px;
+                height: 451px;
+            }
+        }
+        .shop:hover{
+            .shop-dropdown{
+                opacity: 100;
+                visibility: visible;
+            }
+        }
+        .vendors{
+            position: relative;
+            width: 114.63px;
+            .vendorsLink{
+                width: 100%;
+                height: 100%;
+            }
+            .vendors-dropdown{
+                width: 250px;
+                height: 241px;
+            }
+        }
+        .vendors:hover{
+            .vendors-dropdown{
+                opacity: 100;
+                visibility: visible;
+            }
+        }
+        .mega-menu{
+            width: 140.73px;
+        }
+        .blog{
+            position: relative;
+            width: 85.28px;
+            .blogLink{
+                width: 100%;
+                height: 100%;
+            }
+            .blog-dropdown{
+                width: 250px;
+                height: 206px;
+            }
+        }
+        .blog:hover{
+            .blog-dropdown{
+                opacity: 100;
+                visibility: visible;
+            }
+        }
+        .pages{
+            width: 97.14px;
+            position: relative;
+            .pagesLink{
+                width: 100%;
+                height: 100%;
+            }
+            .pages-dropdown{
+                width: 250px;
+                height: 346px;
+            }
+        }
+        .pages:hover{
+            .pages-dropdown{
+                opacity: 100;
+                visibility: visible;
+            }
+        }
+        .contact{
+            width: 95.01px;
+        }
+    }
+    .call-center{
+        width: 174.137px;
+        height: 38px;
+        column-gap: 10px;
+        margin-left: 65px;
+        p{
+            font-size: 26px;
+            font-family: Quicksand;
+            color: #3bb77e;
+            font-weight: 700;
+            font-stretch: 100%;
+        }
+        span{
+            font-size: 12px;
+            font-family: Lato;
+            color: #7e7e7e;
+        }
+    }
+}

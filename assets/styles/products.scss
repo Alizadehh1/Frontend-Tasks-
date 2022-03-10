@@ -66,6 +66,7 @@ main{
                         border: 0px;
                     }
                 }
+                
             }
             .slider-prev{
                 position: absolute;
@@ -477,13 +478,14 @@ main{
             width: 624px;
             height: 16px;
             a{
+                position: relative;
                 color: #253d4e;
                 font-weight: 700;
                 transition: 0.3s;
             }
             a:hover{
                 color: #3Bb77e;
-                padding-bottom: 20px;
+                bottom: 3px;
             }
         }
     }
@@ -497,6 +499,43 @@ main{
             margin-bottom: 30px;
             border: 1px solid rgb(236, 236, 236);
             border-radius: 15px;
+            transition: 0.3s;
+            .product-ability{
+                width: 127.43px;
+                height: 38px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                opacity: 0;
+                visibility: hidden;
+                border: 1px solid #BCE3C9;
+                position: absolute;
+                top: 105px;
+                left: 75px;
+                background-color: white;
+                transition: 0.5s;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 36px;
+                    width: 40px;
+                    border-right: 1px solid #BCE3C9;
+                    i{
+                        font-size: 16px;
+                        color: #3BB77E;
+                        transition: 0.2s;
+                    }
+                }
+                div:hover{
+                    i{
+                        color:rgb(253, 192, 64);
+                    }
+                }
+                .eye{
+                    border-right: none;
+                }
+            }
             .product-image{
                 width: 277.84px;
                 height: 252.84px;
@@ -507,6 +546,7 @@ main{
                     img{
                         width: 228px;
                         height: 228px;
+                        transition: 1.3s;
                     }
                 }
                 .hot , .sale , .new , .dealBadge{
@@ -607,10 +647,144 @@ main{
                             color: #3Bb77e;
                             font-size: 14px;
                             font-weight: 700;
+                            transition: 0.5s;
+                            position: relative;
                             i{
                                 font-size: 14px;
                             }
                         }
+                        .addToBasket:hover{
+                            background-color: #3BB77E;
+                            color: white;
+                            bottom: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        .product-cart:hover{
+            border: 0.1px solid #3BB77E;
+            .product-ability{
+                visibility: visible;
+                opacity: 100;
+            }
+        }
+        .product-cart-1:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-2:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-3:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-4:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-5:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-6:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-7:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-8:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-9:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-2.jpg');
+                        width: 233px;
+                        height: 233px;
+                    }
+                }
+            }
+        }
+        .product-cart-10:hover{
+            .product-image{
+                padding-left: 22.5px;
+                a{
+                    img{
+                        content: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-2.jpg');
+                        width: 233px;
+                        height: 233px;
                     }
                 }
             }
@@ -762,7 +936,7 @@ main{
                         background-color: #3Bb77e;
                         border-radius: 4px;
                         margin-top: 51px;
-                        a{
+                        button{
                             font-size: 14px;
                             font-weight: 700;
                             color: white;
@@ -846,6 +1020,11 @@ main{
             position: relative;
             width: 355.8px;
             height: 100%;
+            &:hover{
+                .deals-of-the-day-product-content-container{
+                    transform: translateY(-7px);
+                }
+            }
             .deals-of-the-day-product-image{
                 width: 100%;
                 height: 315.08px;
@@ -873,6 +1052,8 @@ main{
                 position: absolute;
                 left: 24.905px;
                 bottom: 25px;
+                // transition: 0.4s;
+                transition: 0.4s;
                 .deals-of-the-day-product-content{
                     width: 100%;
                     height: 100%;
@@ -1091,5 +1272,15 @@ main{
                 }
             }
         }
+    }
+}
+.subscribe{
+    background-color: white;
+    border-radius: 50px;
+    .btnSubscribe:hover{
+        background-color: #29A56C !important;
+    }
+    .btnSubscribe{
+        transition: 300ms;
     }
 }

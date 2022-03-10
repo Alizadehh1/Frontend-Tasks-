@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.css">
+    <script src="./vendors/bootstrap/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/page-account.css">
+</head>
+<body>
+    <header>
+        <div class="header-container-2 align-items-center">
+            <div class="logo-container">
+                <img src="./assets/images/logo.svg" alt="">
+            </div>
+            <div class="search-container">
+                <div class="search d-flex">
+                    <div class="categories d-flex align-items-center">
+                        <p>All Categories</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="search-input">
+                        <input type="search" name="srch" id="srch" placeholder="Search for items...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-container-2-right d-flex">
+                <div class="compare d-flex col-3">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <p>Compare</p>
+                    <div class="compare-count d-flex justify-content-center align-items-center">
+                        3
+                    </div>
+                </div>
+                <div class="wishlist d-flex col-3">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Wishlist</p>
+                    <div class="wishlist-count d-flex justify-content-center align-items-center">
+                        6
+                    </div>
+                </div>
+                <div class="cart d-flex">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                    <div class="product-count d-flex justify-content-center align-items-center">
+                        2
+                    </div>
+                </div>
+                <div class="account d-flex col-3">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Account</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation-container d-flex align-items-center">
+            <div class="main-categories d-flex justify-content-evenly align-items-center">
+                <i class="fa-solid fa-border-all"></i>
+                <p>Browse All Categories</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="main-menu d-flex">
+                <div class="hot-deals d-flex align-items-center">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-hot.svg" alt="">
+                    <a href="#"><b>Hot Deals</b></a>
+                </div>
+                <div class="home d-flex align-items-center justify-content-between">
+                    <div class="homeLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Home</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="home-dropdown dropDown">
+                        <a href="#"><b>Home 1</b> </a>
+                        <a href="#"><b>Home 2</b> </a>
+                        <a href="#"><b>Home 3</b> </a>
+                        <a href="#"><b>Home 4</b> </a>
+                        <a href="#"><b>Home 5</b> </a>
+                        <a href="#"><b>Home 6</b> </a>
+                    </div>
+                </div>
+                <div class="about d-flex align-items-center">
+                    <a href="#"><b>About</b></a>
+                </div>
+                <div class="shop d-flex align-items-center justify-content-between">
+                    <div class="shopLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Shop</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="shop-dropdown dropDown">
+                        <a href="#"><b>Shop Grid - Right Sidebar</b> </a>
+                        <a href="#"><b>Shop Grid - Left Sidebar</b> </a>
+                        <a href="#"><b>Shop List - Right Sidebar</b> </a>
+                        <a href="#"><b>Shop List - Left Sidebar</b> </a>
+                        <a href="#"><b>Shop Wide</b> </a>
+                        <a href="#"><b>Single Product</b> </a>
+                        <a href="#"><b>Shop - Filter</b> </a>
+                        <a href="#"><b>Shop - Wishlist</b> </a>
+                        <a href="#"><b>Shop - Cart</b> </a>
+                        <a href="#"><b>Shop - Checkout</b> </a>
+                        <a href="#"><b>Shop - Compare</b> </a>
+                        <a href="#"><b>Shop Invoice</b> </a>
+                    </div>
+                </div>
+                <div class="vendors d-flex align-items-center justify-content-between">
+                    <div class="vendorsLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Vendors</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="vendors-dropdown dropDown">
+                        <a href="#"><b> Vendors Grid</b></a>
+                        <a href="#"><b> Vendors List</b> </a>
+                        <a href="#"><b> Vendor Details 01</b></a>
+                        <a href="#"><b> Vendor Details 02</b></a>
+                        <a href="#"><b> Vendor Dashboard</b></a>
+                        <a href="#"><b> Vendor Guide</b></a>
+                    </div>
+                </div>
+                <div class="mega-menu d-flex align-items-center justify-content-between">
+                    <a href="#"><b>Mega menu</b></a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="blog d-flex align-items-center justify-content-between">
+                    <div class="blogLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Blog</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="blog-dropdown dropDown">
+                        <a href="#"><b>Blog Category Grid</b></a>
+                        <a href="#"><b>Blog Category List</b></a>
+                        <a href="#"><b>Blog Category Big</b></a>
+                        <a href="#"><b>Blog Category Wide</b></a>
+                        <a href="#"><b>Single Post</b></a>
+                    </div>
+                </div>
+                <div class="pages d-flex align-items-center justify-content-between">
+                    <div class="pagesLink d-flex align-items-center justify-content-between">
+                        <a href="#"><b>Pages</b></a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="pages-dropdown dropDown">
+                        <a href="#"><b>About Us</b></a>
+                        <a href="#"><b>Contact</b></a>
+                        <a href="#"><b>My Account</b></a>
+                        <a href="#"><b>Login</b></a>
+                        <a href="#"><b>Register</b></a>
+                        <a href="#"><b>Purchase Guide</b></a>
+                        <a href="#"><b>Privacy Policy</b></a>
+                        <a href="#"><b>Terms of Service</b></a>
+                        <a href="#"><b>404 Page</b></a>
+                    </div>
+                </div>
+                <div class="contact d-flex align-items-center justify-content-center">
+                    <a href="#"><b>Contact</b></a>
+                </div>
+            </div>
+            <div class="call-center d-flex">
+                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-headphone.svg" alt="">
+                <div class="call-center-texts d-block">
+                    <p>1900 - 888</p>
+                    <span>24/7 Support Center</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="page-location-container">
+            <div class="page-location">
+                <a href="">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a>
+                <i class="fa-solid fa-angle-right"></i>
+                <p>Pages</p>
+                <i class="fa-solid fa-angle-right"></i>
+                <p>Login</p>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="page-content-container">
+                <div class="page-content-menu-bar col-md-3">
+                    <div class="active-div">
+                        <a href="#">
+                            <i class="fa-solid fa-sliders"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-bag-shopping"></i>
+                            <p>Orders</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-cart-arrow-down"></i>
+                            <p>Track Your Order</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-location-dot"></i>
+                            <p>My Address</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Account Details</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-arrow-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="page-content-text col-md-9">
+                    <div class="dashboard-content">
+                        <div class="content-header">
+                            <h1>Hello Rosie!</h1>
+                        </div>
+                        <div class="content-bottom">
+                            <p>From your account dashboard. you can easily check & view your <a href="">recent orders</a>,<br>manage your 
+                                <a href="">shipping and billing addresses</a> and <a href="">edit your password and account details.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="subscribtion">
+            <div class="subscribtion-texts-container">
+                <h1>Stay home & get your daily<br>needs from our shop</h1>
+                <p>Start You'r Daily Shopping with <b>Nest Mart</b></p>
+                <div class="subscribe d-flex">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <input type="text" name="" id="" placeholder="Your email address">
+                    <button class="btnSubscribe">Subscribe</button>
+                </div>
+            </div>
+            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-13.png" alt="">
+        </section>
+        <section class="ability-of-company">
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="icon">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-1.svg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Best prices & offers</h1>
+                    <p>Orders $50 or more</p>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="icon">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-2.svg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Free Delivery</h1>
+                    <p>24/7 amazing services</p>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="icon">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-3.svg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Great daily deal</h1>
+                    <p>When you sign up</p>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="icon">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-4.svg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Wide assortment</h1>
+                    <p>Mega Discounts</p>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="icon">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-5.svg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Easy returns</h1>
+                    <p>Within 30 days</p>
+                </div>
+            </div>
+        </section>
+        <section class="main-footer">
+            <div class="links">
+                <div class="about-company">
+                    <div class="logo">
+                        <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg" alt="">
+                        <p>Awesome grocery store website template</p>
+                    </div>
+                    <div class="content">
+
+                        <div class="content-1">
+                            <p> <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-location.svg" alt=""> <b>Address:</b> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+                        </div>
+
+                        <div class="content-2">
+                            <p><img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-contact.svg" alt=""><b>Call Us:</b> (+91) - 540-025-124553</p>
+                        </div>
+
+                        <div class="content-3">
+                            <p><img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-email-2.svg" alt=""><b>Email:</b> sale@Nest.com</p>
+                        </div>
+
+                        <div class="content-4">
+                            <p><img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-clock.svg" alt=""><b>Hours</b> 10:00 - 18:00, Mon - Sat</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="link-company link">
+                    <h1>Company</h1>
+                    <a href="#">About Us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Support Center</a>
+                    <a class="last-link" href="#">Careers</a>
+                </div>
+                <div class="link-account link">
+                    <h1>Account</h1>
+                    <a href="#">Sign in</a>
+                    <a href="#">View Cart</a>
+                    <a href="#">My Wishlist</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">Help Ticket</a>
+                    <a href="#">Shipping Details</a>
+                    <a class="last-link" href="#">Compare products</a>
+                </div>
+                <div class="link-corporate link">
+                    <h1>Corporate</h1>
+                    <a href="#">Become a Vendor</a>
+                    <a href="#">Affiliate Program</a>
+                    <a href="#">Farm Business</a>
+                    <a href="#">Farm Careers</a>
+                    <a href="#">Our Suppliers</a>
+                    <a href="#">Accessibility</a>
+                    <a class="last-link" href="#">Promotions</a>
+                </div>
+                <div class="link-popular link">
+                    <h1>Popular</h1>
+                    <a href="#">Milk & Flavoured Milk</a>
+                    <a href="#">Butter and Margarine</a>
+                    <a href="#">Eggs Substitutes</a>
+                    <a href="#">Marmalades</a>
+                    <a href="#">Sour Cream and Dips</a>
+                    <a href="#">Tea & Kombucha</a>
+                    <a class="last-link" href="#">Cheese</a>
+                </div>
+            </div>
+            <div class="application-container">
+                <h1>Install App</h1>
+                <p>From App Store or Google Play</p>
+                <div class="application-icons">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/app-store.jpg" alt="">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/google-play.jpg" alt="">
+                </div>
+                <span>Secured Payment Gateways</span>
+                <img class="cards" src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/payment-method.png" alt="">
+            </div>
+        </section>
+        <section class="lastest-part-of-footer">
+            <div class="lastest-part-of-footer-container">
+                <div class="copyright col-4">
+                    <p>© 2021, <b>Nest</b> - HTML Ecommerce Template<br>All rights reserved</p>
+                </div>
+                <div class="call-center col-4">
+                    <div>
+                        <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/phone-call.svg" alt="">
+                        <div>
+                            <h1>1900 - 6666</h1>
+                            <p>Working 8:00 - 22:00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/phone-call.svg" alt="">
+                        <div>
+                            <h1>1900 - 8888</h1>
+                            <p>Working 8:00 - 22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-websites col-4">
+                    <div class="social-websites-column-1">
+                        <h1>Follow Us</h1>
+                        <div class="social-websites-icon">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-facebook-white.svg" alt="">
+                        </div>
+
+                        <div class="social-websites-icon">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-twitter-white.svg" alt="">
+                        </div>
+
+                        <div class="social-websites-icon">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-instagram-white.svg" alt="">
+                        </div>
+
+                        <div class="social-websites-icon">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-pinterest-white.svg" alt="">
+                        </div>
+
+                        <div class="social-websites-icon">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-youtube-white.svg" alt="">
+                        </div>
+
+                    </div>
+                    <p>Up to 15% discount on your first subscribe</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

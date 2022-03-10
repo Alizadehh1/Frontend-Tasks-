@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px) {
+  .header-container {
+    display: none !important;
+  }
+  body {
+    margin: 0px 119.6px !important;
+  }
+}
+/*# sourceMappingURL=responsibility.css.map */

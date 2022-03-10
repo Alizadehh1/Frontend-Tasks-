@@ -1,0 +1,177 @@
+.page-location-container{
+    height: 66.6px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    .page-location{
+        padding: 0px 12px;
+        display: flex;
+        align-items: center;
+        width: 250.26px;
+        justify-content: space-between;
+        a{
+            width: 58.73px;
+            display: flex;
+            justify-content: space-between;
+            i{
+                color: #3BB77E;
+                font-size: 14px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 600;
+                color: #3BB77E;
+            }
+        }
+        i{
+            font-size: 9px;
+            color: #7e7e7e;
+            // padding: 0px 12px;
+        }
+        p{
+            font-size: 14px;
+            color: #7e7e7e;
+        }
+    }
+}
+.pageContent-container{
+    height: 852px;
+    padding: 150px 0px;
+    .pageContent{
+        height: 100%;
+        display: flex;
+        .pageContent-image{
+            height: 100%;
+            padding-left: 12px;
+            padding-right: 30px;
+            img{
+                width: 464.3px;
+                height: 544.8px;
+                border-radius: 15px;
+            }
+        }
+        .pageContent-login{
+            width: 506.39px;
+            height: 494.85px;
+            height: 100%;
+            padding: 0px 12px;
+            .header-login{
+                height: 86.8px;
+                h1{
+                    color: #253d4e;
+                    font-size: 48px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                p{
+                    color: #7e7e7e;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                    line-height: 24px;
+                    a{
+                        color: #3BB77E;
+                    }
+                }
+            }
+            .form-login{
+                height: 378.25px;
+                .username-email-container , .password-container{
+                    height: 64px;
+                    margin-bottom: 16px;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        padding: 1px 2px 1px 20px;
+                        border: 1px solid rgb(236, 236, 236);
+                        border-radius: 10px;
+                    }
+                }
+                .security-code-container{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 64px;
+                    margin-bottom: 20px;
+                    margin-top: 5px;
+                    input{
+                        width: 196.8px;
+                        height: 100%;
+                        padding: 1px 2px 1px 20px;
+                        border: 1px solid rgb(236, 236, 236);
+                        border-radius: 10px;
+                    }
+                    div{
+                        width: 149.61px;
+                        padding: 0px 40px;
+                        height: 100%;
+                        background-color: rgb(188, 227, 201);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        b{
+                            font-size: 24px;
+                        }
+                        .firstNum{
+                            color: #55bb90;
+                        }
+                        .secondNum{
+                            color: #f74b81;
+                        }
+                        .thirdNum{
+                            color: #67bcee;
+                        }
+                        .fourthNum{
+                            color: #f59758;
+                        }
+                    }
+                }
+                .login-footer{
+                    height: 30.25px;
+                    margin-top: 5px;
+                    margin-bottom: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    .check-form{
+                        width: 114px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        #remember{
+                            width: 17px;
+                            height: 17px;
+                            border: 2px solid rgb(206, 212, 218);
+                            margin-right: 8px;
+                        }
+                        label{
+                            font-size: 14px;
+                            color: rgb(104, 113, 136);
+                        }
+                    }
+                    a{
+                        color: rgb(182, 182, 182);
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                }
+                .login-button{
+                    height: 54px;
+                    margin-bottom: 16px;
+                    button{
+                        height: 100%;
+                        width: 130px;
+                        padding: 15px 40px;
+                        border-radius: 10px;
+                        background-color: rgb(37, 61, 78);
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 700;
+                        letter-spacing: 0.5px;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

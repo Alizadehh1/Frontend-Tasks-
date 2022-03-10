@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,iBAAiB,CAAA;IACb,OAAO,EAAE,eAAe;GAC3B;EACD,AAAA,IAAI,CAAA;IACA,MAAM,EAAE,sBAAsB;GACjC",
+    "sources": [
+        "responsibility.scss"
+    ],
+    "names": [],
+    "file": "responsibility.css"
+}

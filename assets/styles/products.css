@@ -583,6 +583,7 @@ main {
 }
 
 .popular-products .textAndLinksOfProducts .linksOfProducts a {
+  position: relative;
   color: #253d4e;
   font-weight: 700;
   -webkit-transition: 0.3s;
@@ -591,7 +592,7 @@ main {
 
 .popular-products .textAndLinksOfProducts .linksOfProducts a:hover {
   color: #3Bb77e;
-  padding-bottom: 20px;
+  bottom: 3px;
 }
 
 .popular-products .products {
@@ -610,6 +611,59 @@ main {
   margin-bottom: 30px;
   border: 1px solid #ececec;
   border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popular-products .products .product-cart .product-ability {
+  width: 127.43px;
+  height: 38px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid #BCE3C9;
+  position: absolute;
+  top: 105px;
+  left: 75px;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.popular-products .products .product-cart .product-ability div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 36px;
+  width: 40px;
+  border-right: 1px solid #BCE3C9;
+}
+
+.popular-products .products .product-cart .product-ability div i {
+  font-size: 16px;
+  color: #3BB77E;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.popular-products .products .product-cart .product-ability div:hover i {
+  color: #fdc040;
+}
+
+.popular-products .products .product-cart .product-ability .eye {
+  border-right: none;
 }
 
 .popular-products .products .product-cart .product-image {
@@ -623,6 +677,8 @@ main {
 .popular-products .products .product-cart .product-image a img {
   width: 228px;
   height: 228px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 
 .popular-products .products .product-cart .product-image .hot, .popular-products .products .product-cart .product-image .sale, .popular-products .products .product-cart .product-image .new, .popular-products .products .product-cart .product-image .dealBadge {
@@ -741,10 +797,128 @@ main {
   color: #3Bb77e;
   font-size: 14px;
   font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
 }
 
 .popular-products .products .product-cart .product-content .product-cart-bottom .add-to-basket .addToBasket i {
   font-size: 14px;
+}
+
+.popular-products .products .product-cart .product-content .product-cart-bottom .add-to-basket .addToBasket:hover {
+  background-color: #3BB77E;
+  color: white;
+  bottom: 3px;
+}
+
+.popular-products .products .product-cart:hover {
+  border: 0.1px solid #3BB77E;
+}
+
+.popular-products .products .product-cart:hover .product-ability {
+  visibility: visible;
+  opacity: 100;
+}
+
+.popular-products .products .product-cart-1:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-1:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-2:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-2:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-3:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-3:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-4:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-4:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-5:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-5:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-6:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-6:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-7:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-7:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-8:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-8:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-9:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-9:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-2.jpg");
+  width: 233px;
+  height: 233px;
+}
+
+.popular-products .products .product-cart-10:hover .product-image {
+  padding-left: 22.5px;
+}
+
+.popular-products .products .product-cart-10:hover .product-image a img {
+  content: url("http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-2.jpg");
+  width: 233px;
+  height: 233px;
 }
 
 .daily-best-sells {
@@ -941,7 +1115,7 @@ main {
   margin-top: 51px;
 }
 
-.daily-best-sells .daily-best-sells-container .daily-best-sells-slider .card-type-2 .card-bottom .add-to-cart a {
+.daily-best-sells .daily-best-sells-container .daily-best-sells-slider .card-type-2 .card-bottom .add-to-cart button {
   font-size: 14px;
   font-weight: 700;
   color: white;
@@ -1035,6 +1209,11 @@ main {
   height: 100%;
 }
 
+.deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product:hover .deals-of-the-day-product-content-container {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
 .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-image {
   width: 100%;
   height: 315.08px;
@@ -1067,6 +1246,8 @@ main {
   position: absolute;
   left: 24.905px;
   bottom: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-content-container .deals-of-the-day-product-content {
@@ -1344,5 +1525,19 @@ main {
   color: #ADADAD;
   font-size: 14px;
   font-weight: 700;
+}
+
+.subscribe {
+  background-color: white;
+  border-radius: 50px;
+}
+
+.subscribe .btnSubscribe:hover {
+  background-color: #29A56C !important;
+}
+
+.subscribe .btnSubscribe {
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 /*# sourceMappingURL=products.css.map */

@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
-    <script src="./bootstrap/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.css">
+    <script src="./vendors/bootstrap/bootstrap.js" defer></script>
     <script src="./assets/javascript/slider.js" defer></script>
+    <script src="./assets/javascript/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="header-container row align-items-center">
+        <div class="header-container d-flex align-items-center">
             <div class="header-left col-xl-3 col-lg-4">
                 <ul>
                     <li class="about-us"><a href="">About Us</a></li>
@@ -81,13 +82,13 @@
                         6
                     </div>
                 </div>
-                <div class="cart d-flex">
+                <a href="./cart.html" class="cart d-flex">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <p>Cart</p>
                     <div class="product-count d-flex justify-content-center align-items-center">
-                        2
+                        
                     </div>
-                </div>
+                </a>
                 <div class="account d-flex col-3">
                     <i class="fa-solid fa-user"></i>
                     <p>Account</p>
@@ -109,7 +110,7 @@
                 </div>
                 <div class="home d-flex align-items-center justify-content-between">
                     <div class="homeLink d-flex align-items-center justify-content-between">
-                        <a href="#"><b>Home</b></a>
+                        <a href="./index.html"><b>Home</b></a>
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <div class="home-dropdown dropDown">
@@ -126,7 +127,7 @@
                 </div>
                 <div class="shop d-flex align-items-center justify-content-between">
                     <div class="shopLink d-flex align-items-center justify-content-between">
-                        <a href="#"><b>Shop</b></a>
+                        <a href="./shop.html"><b>Shop</b></a>
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <div class="shop-dropdown dropDown">
@@ -434,11 +435,26 @@
                 </div>
             </div>
             <div class="products d-flex">
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-1 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                         <div class="hot">
                             Hot
                         </div>
@@ -461,16 +477,31 @@
                                 <span class="old-price">$32.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button onclick="addtoBasket({name:'Seeds of Change Organic Quinoa, Brown, & Red Rice',price:28.85,id:1,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg'})" class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-2 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                         <div class="sale">
                             Sale
                         </div>
@@ -493,16 +524,31 @@
                                 <span class="old-price">$55.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'All Natural Italian-Style Chicken Meatballs',price:52.85,id:2,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-3 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                         <div class="new">
                             New
                         </div>
@@ -525,16 +571,31 @@
                                 <span class="old-price">$52.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Angie’s Boomchickapop Sweet & Salty Kettle Corn',price:48.85,id:3,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-4 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="product-content d-flex flex-column justify-content-between">
                         <div class="product-category">
@@ -554,16 +615,31 @@
                                 <span class="old-price">$19.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Foster Farms Takeout Crispy Classic Buffalo Wings',price:17.85,id:4,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-5 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                         <div class="dealBadge">
                             -14%
                         </div>
@@ -586,16 +662,31 @@
                                 <span class="old-price">$25.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Blue Diamond Almonds Lightly Salted Vegetables',price:23.85,id:5,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-6 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="product-content d-flex flex-column justify-content-between">
                         <div class="product-category">
@@ -615,16 +706,31 @@
                                 <span class="old-price">$55.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Chobani Complete Vanilla Greek Yogurt',price:54.85,id:6,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-7 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="product-content d-flex flex-column justify-content-between">
                         <div class="product-category">
@@ -644,16 +750,31 @@
                                 <span class="old-price">$33.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g',price:32.85,id:7,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-7-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-8 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                         <div class="sale">
                             Sale
                         </div>
@@ -676,16 +797,31 @@
                                 <span class="old-price">$37.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Encore Seafoods Stuffed Alaskan Salmon',price:35.85,id:8,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-9 col-lg-1-5 col-md-4 col-12 col-sm-6">
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                         <div class="hot">
                             Hot
                         </div>
@@ -708,16 +844,31 @@
                                 <span class="old-price">$25.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Gorton’s Beer Battered Fish Fillets with soft paper',price:23.85,id:9,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-9-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-cart col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="product-cart product-cart-10 col-lg-1-5 col-md-4 col-12 col-sm-6"> 
                     <div class="product-image">
                         <a href="">
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-1.jpg" alt="">
                         </a>
+                        <div class="product-ability">
+                            
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="compare">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="product-content d-flex flex-column justify-content-between">
                         <div class="product-category">
@@ -737,7 +888,7 @@
                                 <span class="old-price">$24.8</span>
                             </div>
                             <div class="add-to-basket">
-                                <button class="addToBasket"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+                                <button class="addToBasket" onclick="addtoBasket({name:'Haagen-Dazs Caramel Cone Ice Cream Ketchup',price:22.85,id:10,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-10-1.jpg'})"><i class="fa-solid fa-cart-shopping"></i> Add</button>
                             </div>
                         </div>
                     </div>
@@ -774,8 +925,8 @@
                                 <h1>Seeds of Change Organic Quinoa, Brown</h1>
                                 <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
                                 <div class="product-price">
-                                    <span class="new-price">$238.85</span>
-                                    <span class="old-price">$245.8</span>
+                                    <span class="new-price">$28.85</span>
+                                    <span class="old-price">$32.8</span>
                                 </div>
                                 <div class="fullPercentage">
                                     <div class="sell-average">
@@ -784,7 +935,7 @@
                                     <p>Sold:90/120</p>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                    <button href="" onclick="addtoBasket({name:'Seeds of Change Organic Quinoa, Brown',price:28.85,id:1,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg'})" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
     
                                 </div>
                             </div>
@@ -801,8 +952,8 @@
                                 <h1>All Natural Italian-Style Chicken Meatballs</h1>
                                 <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
                                 <div class="product-price">
-                                    <span class="new-price">$238.85</span>
-                                    <span class="old-price">$245.8</span>
+                                    <span class="new-price">$23.85</span>
+                                    <span class="old-price">$25.8</span>
                                 </div>
                                 <div class="fullPercentage">
                                     <div class="sell-average">
@@ -811,7 +962,7 @@
                                     <p>Sold:90/120</p>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                    <button href="" onclick="addtoBasket({name:'All Natural Italian-Style Chicken Meatballs',price:23.85,id:5,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg'})" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
     
                                 </div>
                             </div>
@@ -828,8 +979,8 @@
                                 <h1>Angie’s Boomchickapop Sweet and womnies</h1>
                                 <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
                                 <div class="product-price">
-                                    <span class="new-price">$238.85</span>
-                                    <span class="old-price">$245.8</span>
+                                    <span class="new-price">$52.85</span>
+                                    <span class="old-price">$55.8</span>
                                 </div>
                                 <div class="fullPercentage">
                                     <div class="sell-average">
@@ -838,7 +989,7 @@
                                     <p>Sold:90/120</p>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                    <button href="" onclick="addtoBasket({name:'Angie’s Boomchickapop Sweet and womnies',price:52.85,id:2,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg'})" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
     
                                 </div>
                             </div>
@@ -855,8 +1006,8 @@
                                 <h1>Foster Farms Takeout Crispy Classic </h1>
                                 <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
                                 <div class="product-price">
-                                    <span class="new-price">$238.85</span>
-                                    <span class="old-price">$245.8</span>
+                                    <span class="new-price">$48.85</span>
+                                    <span class="old-price">$52.8</span>
                                 </div>
                                 <div class="fullPercentage">
                                     <div class="sell-average">
@@ -865,7 +1016,7 @@
                                     <p>Sold:90/120</p>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                    <button href="" onclick="addtoBasket({name:'Foster Farms Takeout Crispy Classic',price:48.85,id:3,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-1.jpg'})" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</butt>
     
                                 </div>
                             </div>
@@ -882,8 +1033,8 @@
                                 <h1>Blue Diamond Almonds Lightly Salted</h1>
                                 <div class="product-rate"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
                                 <div class="product-price">
-                                    <span class="new-price">$238.85</span>
-                                    <span class="old-price">$245.8</span>
+                                    <span class="new-price">$17.85</span>
+                                    <span class="old-price">$19.8</span>
                                 </div>
                                 <div class="fullPercentage">
                                     <div class="sell-average">
@@ -892,7 +1043,7 @@
                                     <p>Sold:90/120</p>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                    <button href="" onclick="addtoBasket({name:'Blue Diamond Almonds Lightly Salted',price:17.85,id:4,count:1,image:'http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg'})" class="btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -1403,8 +1554,8 @@
                     <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-2.svg" alt="">
                 </div>
                 <div class="text">
-                    <h1>Best prices & offers</h1>
-                    <p>Orders $50 or more</p>
+                    <h1>Free Delivery</h1>
+                    <p>24/7 amazing services</p>
                 </div>
             </div>
 
@@ -1413,8 +1564,8 @@
                     <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-3.svg" alt="">
                 </div>
                 <div class="text">
-                    <h1>Best prices & offers</h1>
-                    <p>Orders $50 or more</p>
+                    <h1>Great daily deal</h1>
+                    <p>When you sign up</p>
                 </div>
             </div>
 
@@ -1423,8 +1574,8 @@
                     <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-4.svg" alt="">
                 </div>
                 <div class="text">
-                    <h1>Best prices & offers</h1>
-                    <p>Orders $50 or more</p>
+                    <h1>Wide assortment</h1>
+                    <p>Mega Discounts</p>
                 </div>
             </div>
 
@@ -1433,8 +1584,8 @@
                     <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-5.svg" alt="">
                 </div>
                 <div class="text">
-                    <h1>Best prices & offers</h1>
-                    <p>Orders $50 or more</p>
+                    <h1>Easy returns</h1>
+                    <p>Within 30 days</p>
                 </div>
             </div>
         </section>

@@ -1,0 +1,243 @@
+.page-location-container {
+  height: 66.6px;
+  padding: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-location-container .page-location {
+  padding: 0px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250.26px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-location-container .page-location a {
+  width: 58.73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-location-container .page-location a i {
+  color: #3BB77E;
+  font-size: 14px;
+}
+
+.page-location-container .page-location a p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3BB77E;
+}
+
+.page-location-container .page-location i {
+  font-size: 9px;
+  color: #7e7e7e;
+}
+
+.page-location-container .page-location p {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.pageContent-container {
+  height: 852px;
+  padding: 150px 0px;
+}
+
+.pageContent-container .pageContent {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pageContent-container .pageContent .pageContent-image {
+  height: 100%;
+  padding-left: 12px;
+  padding-right: 30px;
+}
+
+.pageContent-container .pageContent .pageContent-image img {
+  width: 464.3px;
+  height: 544.8px;
+  border-radius: 15px;
+}
+
+.pageContent-container .pageContent .pageContent-login {
+  width: 506.39px;
+  height: 494.85px;
+  height: 100%;
+  padding: 0px 12px;
+}
+
+.pageContent-container .pageContent .pageContent-login .header-login {
+  height: 86.8px;
+}
+
+.pageContent-container .pageContent .pageContent-login .header-login h1 {
+  color: #253d4e;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.pageContent-container .pageContent .pageContent-login .header-login p {
+  color: #7e7e7e;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.pageContent-container .pageContent .pageContent-login .header-login p a {
+  color: #3BB77E;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login {
+  height: 378.25px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .username-email-container, .pageContent-container .pageContent .pageContent-login .form-login .password-container {
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .username-email-container input, .pageContent-container .pageContent .pageContent-login .form-login .password-container input {
+  width: 100%;
+  height: 100%;
+  padding: 1px 2px 1px 20px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 64px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container input {
+  width: 196.8px;
+  height: 100%;
+  padding: 1px 2px 1px 20px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container div {
+  width: 149.61px;
+  padding: 0px 40px;
+  height: 100%;
+  background-color: #bce3c9;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container div b {
+  font-size: 24px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container div .firstNum {
+  color: #55bb90;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container div .secondNum {
+  color: #f74b81;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container div .thirdNum {
+  color: #67bcee;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container div .fourthNum {
+  color: #f59758;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-footer {
+  height: 30.25px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-footer .check-form {
+  width: 114px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-footer .check-form #remember {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ced4da;
+  margin-right: 8px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-footer .check-form label {
+  font-size: 14px;
+  color: #687188;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-footer a {
+  color: #b6b6b6;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-button {
+  height: 54px;
+  margin-bottom: 16px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .login-button button {
+  height: 100%;
+  width: 130px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  background-color: #253d4e;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 0px;
+}
+/*# sourceMappingURL=login-main.css.map */
