@@ -1,3 +1,6 @@
+let products = JSON.parse(localStorage.getItem('products'));
+let productCount = document.querySelector('.product-count');
+let btnBasket = document.querySelector('.addToBasket');
 const addtoBasket = (product) => {
     if (localStorage.getItem('products') === null) {
         localStorage.setItem('products', JSON.stringify([]));
@@ -11,19 +14,16 @@ const addtoBasket = (product) => {
         ourProducts.push(product);
         localStorage.setItem('products', JSON.stringify(ourProducts));
     }
-    // let products = JSON.parse(localStorage.getItem('products'));
-    // let productCount = document.querySelector('.product-count');
-    // function determineProductQuantity() {
-    //     let quantityOfProducts = 0;
-    //     for (let i = 0; i < products.length; i++) {
-    //         quantityOfProducts = quantityOfProducts + products[i].count;
-    //     }
-    //     productCount.textContent = quantityOfProducts;
-    // }
-    // determineProductQuantity();
+    determineProductQuantity();
+    location.reload();
 }
-for (let i = 0; i < products.length; i++) {
-    if (products[i] === products[i].id) {
-        products[i].count++
-    }    
+document.addEventListener('DOMContentLoaded', () => {
+    determineProductQuantity();
+});
+function determineProductQuantity() {
+    let quantityOfProducts = 0;
+    for (let i = 0; i < products.length; i++) {
+        quantityOfProducts = quantityOfProducts + products[i].count;
+    }
+    productCount.textContent = quantityOfProducts;
 }

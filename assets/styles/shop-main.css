@@ -134,6 +134,14 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-categories .banner .banner-links ul li a:hover {
+  color: #fdc040;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .banner-categories .banner .banner-links ul li a i {
@@ -169,7 +177,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 2430.86px;
   padding: 0px 12px;
   margin-bottom: 30px;
 }
@@ -243,16 +250,37 @@
 .main-page-content-container .main-page-content .product-filter .filter .sort-view {
   width: 140.19px;
   margin-right: 10px;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-page-content-container .main-page-content .product-filter .filter .sort-view:hover {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .main-page-content-container .main-page-content .product-filter .filter .sort-by {
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 185.96px;
+}
+
+.main-page-content-container .main-page-content .product-filter .filter .sort-by:hover {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .main-page-content-container .main-page-content .all-products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 24px;
           column-gap: 24px;
   -ms-flex-wrap: wrap;
@@ -621,7 +649,6 @@
 }
 
 .main-page-content-container .main-page-content .deals-of-the-day {
-  height: 505.41px;
   width: 100%;
   padding-top: 25px;
   padding-bottom: 5px;
@@ -668,9 +695,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 442.48px;
-  -webkit-column-gap: 24px;
-          column-gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
 }
 
 .main-page-content-container .main-page-content .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product {
@@ -906,6 +936,15 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-page-content-container aside .category ul li:hover {
+  border: 1px solid #BCE3C9;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .main-page-content-container aside .category ul li img {
@@ -986,6 +1025,13 @@
   line-height: 24px;
   padding: 0px;
   margin: 0px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-page-content-container aside .new-products .post1 .image-content h1:hover {
+  color: #fdc040;
 }
 
 .main-page-content-container aside .new-products .post1 .image-content p {
@@ -1039,6 +1085,13 @@
   line-height: 19.2px;
   padding: 0px;
   margin: 0px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-page-content-container aside .new-products .post2 .image-content h1:hover {
+  color: #fdc040;
 }
 
 .main-page-content-container aside .new-products .post2 .image-content p {
@@ -1091,6 +1144,13 @@
   line-height: 19.2px;
   padding: 0px;
   margin: 0px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-page-content-container aside .new-products .post3 .image-content h1:hover {
+  color: #fdc040;
 }
 
 .main-page-content-container aside .new-products .post3 .image-content p {
@@ -1278,7 +1338,7 @@
   margin-bottom: 5px;
 }
 
-.main-page-content-container aside .fill-by-price button {
+.main-page-content-container aside .fill-by-price .price-title button {
   width: 106.03px;
   height: 39.6px;
   background-color: #3Bb77e;
@@ -1290,9 +1350,16 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 21.6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.main-page-content-container aside .fill-by-price button i {
+.main-page-content-container aside .fill-by-price .price-title button:hover {
+  background-color: #fdc040;
+  width: 111.03px;
+}
+
+.main-page-content-container aside .fill-by-price .price-title button i {
   font-size: 12px;
   margin-left: 10px;
   margin-right: 5px;

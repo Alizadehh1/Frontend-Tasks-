@@ -1,8 +1,8 @@
 let productContainer = document.querySelector('.products-container');
 let products = JSON.parse(localStorage.getItem('products'));
-// let quantityOfProductsContainer = document.querySelector('.quantityOfProducts');
-// let basketCount = document.querySelector('.product-count');
-// let totalPriceText = document.querySelectorAll('.totalPrice');
+let quantityOfProductsContainer = document.querySelector('.quantityOfProducts');
+let basketCount = document.querySelector('.product-count');
+let totalPriceText = document.querySelectorAll('.totalPrice');
 products.map((product) => {
     let productElement = document.createElement('div');
     productElement.classList.add('product');

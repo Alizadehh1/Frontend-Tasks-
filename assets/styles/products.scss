@@ -13,11 +13,13 @@ main{
         }
         position: relative;
         .banner-slider-1{
+            height: 100%;
             .onbanner-container{
                 margin-top: 80px;
                 margin-left: 80px;
                 width: 679.76px;
-                height: 337px;
+                // height: 337px;
+                height: auto;
                 position: absolute;
                 .headerText{
                     width: 100%;
@@ -105,11 +107,13 @@ main{
             
         }
         .banner-slider-2{
+            height: 100%;
             .onbanner-container{
                 margin-top: 80px;
                 margin-left: 80px;
                 width: 679.76px;
-                height: 337px;
+                height: auto;
+                height: 100%;
                 position: absolute;
                 .headerText{
                     width: 100%;
@@ -201,7 +205,7 @@ main{
         height: 538px;
         img{
             width: 100%;
-            height: 100%;
+            height: 467px;
         border-radius: 30px;
 
         }
@@ -396,9 +400,11 @@ main{
         background-size: contain;
     }
     .banner-1, .banner-2, .banner-3{
-        height: 282.64px;
-        width: 482.39px;
+        // height: 282.64px;
+        height: 100%;
+        width: calc((100% - 72px) / 3);
         border-radius: 10px;
+        background-repeat: no-repeat;
         .banner-text{
             padding: 0px 50px;
             width: 302.93px;
@@ -647,16 +653,16 @@ main{
                             color: #3Bb77e;
                             font-size: 14px;
                             font-weight: 700;
-                            transition: 0.5s;
+                            transition: 0.3s;
                             position: relative;
                             i{
                                 font-size: 14px;
                             }
-                        }
-                        .addToBasket:hover{
-                            background-color: #3BB77E;
-                            color: white;
-                            bottom: 3px;
+                            &:hover{
+                                background-color: #3BB77E;
+                                color: white;
+                                transform: translateY(-3px);
+                            }
                         }
                     }
                 }
@@ -792,6 +798,7 @@ main{
     }
 }
 .daily-best-sells{
+    
     padding: 25px 12px;
     padding-bottom: 5px;
     .best-seller-textAndLinks{
@@ -815,7 +822,6 @@ main{
     }
     .daily-best-sells-container{
         display: flex;
-        flex-direction: row;
         // width: 1108px;
         height: 523.2px;
         column-gap: 12px;
@@ -840,6 +846,10 @@ main{
         .daily-best-sells-slider{
             height: 523.2px;
             width: 1108px;
+            // width: auto;
+            // width: 100%;
+            // width: calc(100%-);
+            // max-width: 1108px;
             display: flex;
             flex-direction: row;
             column-gap: 20px;
@@ -916,11 +926,14 @@ main{
                         height: 5px;
                         background-color: #e9ecef;
                         margin: 15px 0px;
+                        border-radius: 4px;
                         .sell-average{
                             width: 50%;
                             height: 100%;
                             background-color: #3BB77E;
                             margin-bottom: 10px;
+                            border-top-left-radius: 4px;
+                            border-bottom-left-radius: 4px;
                         }
                         p{
                             font-size: 13px;
@@ -936,6 +949,11 @@ main{
                         background-color: #3Bb77e;
                         border-radius: 4px;
                         margin-top: 51px;
+                        transition: 0.2s;
+                        &:hover{
+                            transform: translateY(-5px);
+                            background-color: rgb(253, 192, 64);
+                        }
                         button{
                             font-size: 14px;
                             font-weight: 700;
@@ -975,6 +993,11 @@ main{
                     i{
                         font-size: 9px;
                     }
+                    transition: 0.3s;
+                    &:hover{
+                        width: 108.61px;
+                        background-color: rgb(253, 192, 64);
+                    }
                 }
             }
         }
@@ -1013,9 +1036,10 @@ main{
         }
     }
     .deals-of-the-day-products{
+        flex-wrap: wrap;
         position: relative;
-        height: 442.48px;
-        column-gap: 24px;
+        // height: 442.48px;
+        gap: 24px;
         .deals-of-the-day-product{
             position: relative;
             width: 355.8px;
@@ -1091,6 +1115,11 @@ main{
                         font-family: Quicksand;
                         font-weight: 700;
                         color: #253d4e;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        &:hover{
+                            color: #3Bb77e;
+                        }
                     }
                     .deals-of-the-day-product-content-bottom{
                         width: 237.84px;
@@ -1124,8 +1153,14 @@ main{
                                 color: #3Bb77e;
                                 font-size: 14px;
                                 font-weight: 700;
+                                transition: 0.3s;
                                 i{
                                     font-size: 14px;
+                                }
+                                &:hover{
+                                    background-color: #3BB77E;
+                                    color: white;
+                                    transform: translateY(-3px);
                                 }
                             }
                         }
@@ -1168,9 +1203,10 @@ main{
     display: flex;
     column-gap: 24px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
     .topProduct{
         width: 355.8px;
-        height: 449.16px;
+        // height: 449.16px;
         h1{
             height: 49.8px;
             padding-bottom: 20px;
@@ -1181,10 +1217,14 @@ main{
         }
         .top-selling-product{
             width: 355.8px;
-            height: 109.79px;
+            // height: 109.79px;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
+            transition: 0.3s;
+            &:hover{
+                transform: translateY(-7px);
+            }
             .top-selling-product-image{
                 width: 126.59px;
                 height: 100%;
@@ -1236,6 +1276,11 @@ main{
                     font-weight: 700;
                     border: 0px;
                     height: 38.4px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    &:hover{
+                        color: #3Bb77e;
+                    }
                 }
                 .top-selling-product-content-rating{
                     display: flex;

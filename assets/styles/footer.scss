@@ -1,5 +1,5 @@
 footer{
-    height: auto;
+    // height: auto;
     display: flex;
     flex-direction: column;
     h1{
@@ -15,16 +15,21 @@ footer{
     border-radius: 20px;
     padding: 84px 78px;
     margin-bottom: 15px;
-    height: 417px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    // height: 417px;
     background-image: url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-10.png');
-    background-size: cover;
+    background-size: contain;
     position: relative;
     .subscribtion-texts-container{
+        height: 345px;
         h1{
             
             font-size: 40px;
             font-weight: bolder;
             margin-bottom: 20px;
+            
         }
         p{
             font-size: 18px;
@@ -43,7 +48,7 @@ footer{
                 color: #b6b6b6;
                 position: absolute;
                 left: 105px;
-                bottom: 107px;
+                bottom: 203px;
             }
             input{
                 width: 292.45px;
@@ -74,9 +79,11 @@ footer{
 }
 .ability-of-company{
     padding: 25px 12px;
-    height: 162.2px;
+    // height: 162.2px;
+    justify-content: center;
     display: flex;
-    column-gap: 24px;
+    flex-wrap: wrap;
+    gap: 24px;
     div{
         display: flex;
         align-items: center;
@@ -125,10 +132,12 @@ footer{
 }
 .main-footer{
     padding: 25px 12px;
-    height: 687.1px;
+    // height: 687.1px;
+    // background-color: red;
+    // justify-content: center;
     .links{
         display: flex;
-        height: 315.4px;
+        // height: 315.4px;
         flex-wrap: wrap;
         .about-company{
             width: 300px;
@@ -205,8 +214,8 @@ footer{
             }
         }
         .link{
-            width: 248.8px;
-            height: 100%;
+            // width: 248.8px;
+            // height: 100%;
             padding: 0px 12px;
             margin-right: 50px;
             display: flex;
@@ -237,6 +246,7 @@ footer{
     }
     .application-container{
         height: 286.7px;
+        width: 601.3px;
         display: flex;
         flex-direction: column;
         h1{
@@ -280,7 +290,7 @@ footer{
     }
 }
 .lastest-part-of-footer{
-    height: 115px;
+    // height: 115px;
     padding: 0px 12px 30px 12px;
     .lastest-part-of-footer-container{
         align-items: flex-end;
@@ -362,5 +372,15 @@ footer{
                 }
             }
         }
+    }
+}
+.subscribe{
+    background-color: white;
+    border-radius: 50px;
+    .btnSubscribe:hover{
+        background-color: #29A56C !important;
+    }
+    .btnSubscribe{
+        transition: 300ms;
     }
 }

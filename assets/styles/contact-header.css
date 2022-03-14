@@ -186,6 +186,24 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.header-container-2 .mobile-menu {
+  width: 27px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-container-2 .mobile-menu i {
+  font-size: 22px;
+}
+
 .header-container-2 .logo-container {
   width: 250px;
   height: 62.45px;

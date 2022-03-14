@@ -161,6 +161,16 @@ header{
     height: 122.45px;
     padding: 30px 10px;
     border-bottom: 1px solid rgb(236, 236, 236);
+    .mobile-menu{
+        width: 27px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 22px;
+        }
+    }
     .logo-container{
         width: 250px;
         height: 62.45px;

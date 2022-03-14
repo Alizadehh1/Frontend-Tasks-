@@ -186,6 +186,24 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.header-container-2 .mobile-menu {
+  width: 27px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-container-2 .mobile-menu i {
+  font-size: 22px;
+}
+
 .header-container-2 .logo-container {
   width: 250px;
   height: 62.45px;
@@ -326,5 +344,20 @@ header {
 
 .header-container-2 .header-container-2-right .account p {
   margin-left: 3px;
+}
+
+.mobile-menu-container {
+  width: 100%;
+  background-color: red;
+  height: 100px;
+  display: none;
+  -webkit-transform: translateX(-2000px);
+          transform: translateX(-2000px);
+}
+
+.mobile-menu-container-active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  display: block;
 }
 /*# sourceMappingURL=about-header.css.map */

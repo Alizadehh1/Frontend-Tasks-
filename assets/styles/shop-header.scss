@@ -159,10 +159,23 @@ header{
     display: flex;
     width: 100%;
     height: 122.45px;
-    padding: 30px 10px;
+    padding: 30px 12px;
     border-bottom: 1px solid rgb(236, 236, 236);
+    justify-content: space-between;
+    .mobile-menu{
+        width: 27px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        i{
+            font-size: 22px;
+        }
+    }
     .logo-container{
-        width: 250px;
+        // width: 250px;
+        width: auto;
         height: 62.45px;
         display: flex;
         justify-content: flex-start;
@@ -173,10 +186,12 @@ header{
         }
     }
     .search-container{
-        width: 845.09px;
+        width: 55%;
+        // width: auto;
         height: 54px;
         .search{
-            width: 700px;
+            // width: 700px;
+            width: 100%;
             height: 100%;
             border: 2px solid rgb(188, 227, 201);
             border-radius: 4px;
@@ -196,7 +211,8 @@ header{
             .search-input{
                 display: flex;
                 justify-content: flex-end;
-                width: 546px;
+                // width: 546px;
+                width: auto;
                 height: 50px;
                 margin-left: 20px;
                 padding-right: 15px;
@@ -204,6 +220,9 @@ header{
                     border: 0px;
                     width: 100%;
                     height: 100%;
+                    &:focus{
+                        outline: none;
+                    }
                 }
                 i{
                     display: flex;
@@ -215,11 +234,12 @@ header{
         }
     }
     .header-container-2-right{
-        width: 400.11px;
+        // width: 400.11px;
+        width: auto;
         height: 54px;
         column-gap: 7px;
         align-items: center;
-        margin-left: 20px;
+        // margin-left: 20px;
         .compare, .wishlist, .cart{
             position: relative;
             cursor: pointer;
@@ -266,4 +286,15 @@ header{
             cursor: pointer;
         }
     }
+}
+.mobile-menu-container{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+    display: none;
+    transform: translateX(-2000px);
+}
+.mobile-menu-container-active{
+    transform: translateX(0px);
+    display: block;
 }

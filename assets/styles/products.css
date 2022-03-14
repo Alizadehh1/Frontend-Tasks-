@@ -24,11 +24,15 @@ main {
   display: none !important;
 }
 
+.slider .banner-slider-container .banner-slider-1 {
+  height: 100%;
+}
+
 .slider .banner-slider-container .banner-slider-1 .onbanner-container {
   margin-top: 80px;
   margin-left: 80px;
   width: 679.76px;
-  height: 337px;
+  height: auto;
   position: absolute;
 }
 
@@ -127,11 +131,16 @@ main {
   color: #7e7e7e;
 }
 
+.slider .banner-slider-container .banner-slider-2 {
+  height: 100%;
+}
+
 .slider .banner-slider-container .banner-slider-2 .onbanner-container {
   margin-top: 80px;
   margin-left: 80px;
   width: 679.76px;
-  height: 337px;
+  height: auto;
+  height: 100%;
   position: absolute;
 }
 
@@ -236,7 +245,7 @@ main {
 
 .slider .banner-slider-container img {
   width: 100%;
-  height: 100%;
+  height: 467px;
   border-radius: 30px;
 }
 
@@ -484,9 +493,10 @@ main {
 }
 
 .banners .banner-1, .banners .banner-2, .banners .banner-3 {
-  height: 282.64px;
-  width: 482.39px;
+  height: 100%;
+  width: calc((100% - 72px) / 3);
   border-radius: 10px;
+  background-repeat: no-repeat;
 }
 
 .banners .banner-1 .banner-text, .banners .banner-2 .banner-text, .banners .banner-3 .banner-text {
@@ -797,8 +807,8 @@ main {
   color: #3Bb77e;
   font-size: 14px;
   font-weight: 700;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: relative;
 }
 
@@ -809,7 +819,8 @@ main {
 .popular-products .products .product-cart .product-content .product-cart-bottom .add-to-basket .addToBasket:hover {
   background-color: #3BB77E;
   color: white;
-  bottom: 3px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .popular-products .products .product-cart:hover {
@@ -954,10 +965,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   height: 523.2px;
   -webkit-column-gap: 12px;
           column-gap: 12px;
@@ -1084,6 +1091,7 @@ main {
   height: 5px;
   background-color: #e9ecef;
   margin: 15px 0px;
+  border-radius: 4px;
 }
 
 .daily-best-sells .daily-best-sells-container .daily-best-sells-slider .card-type-2 .card-bottom .fullPercentage .sell-average {
@@ -1091,6 +1099,8 @@ main {
   height: 100%;
   background-color: #3BB77E;
   margin-bottom: 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .daily-best-sells .daily-best-sells-container .daily-best-sells-slider .card-type-2 .card-bottom .fullPercentage p {
@@ -1113,6 +1123,14 @@ main {
   background-color: #3Bb77e;
   border-radius: 4px;
   margin-top: 51px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.daily-best-sells .daily-best-sells-container .daily-best-sells-slider .card-type-2 .card-bottom .add-to-cart:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: #fdc040;
 }
 
 .daily-best-sells .daily-best-sells-container .daily-best-sells-slider .card-type-2 .card-bottom .add-to-cart button {
@@ -1152,10 +1170,17 @@ main {
   border-radius: 4px;
   padding: 7px 8px 7px 12px;
   font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .daily-best-sells .daily-best-sells-container .daily-best-sells-banner .banner-text .btn i {
   font-size: 9px;
+}
+
+.daily-best-sells .daily-best-sells-container .daily-best-sells-banner .banner-text .btn:hover {
+  width: 108.61px;
+  background-color: #fdc040;
 }
 
 .deals-of-the-day {
@@ -1197,10 +1222,10 @@ main {
 }
 
 .deals-of-the-day .deals-of-the-day-products {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
-  height: 442.48px;
-  -webkit-column-gap: 24px;
-          column-gap: 24px;
+  gap: 24px;
 }
 
 .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product {
@@ -1296,6 +1321,13 @@ main {
   font-family: Quicksand;
   font-weight: 700;
   color: #253d4e;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-content-container .deals-of-the-day-product-content h1:hover {
+  color: #3Bb77e;
 }
 
 .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-content-container .deals-of-the-day-product-content .deals-of-the-day-product-content-bottom {
@@ -1337,10 +1369,19 @@ main {
   color: #3Bb77e;
   font-size: 14px;
   font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-content-container .deals-of-the-day-product-content .deals-of-the-day-product-content-bottom .add-to-basket .addToBasket i {
   font-size: 14px;
+}
+
+.deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-content-container .deals-of-the-day-product-content .deals-of-the-day-product-content-bottom .add-to-basket .addToBasket:hover {
+  background-color: #3BB77E;
+  color: white;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .deals-of-the-day .deals-of-the-day-products .deals-of-the-day-product .deals-of-the-day-product-content-container .deals-of-the-day-product-countdown {
@@ -1391,11 +1432,12 @@ main {
   -webkit-column-gap: 24px;
           column-gap: 24px;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .top-products .topProduct {
   width: 355.8px;
-  height: 449.16px;
 }
 
 .top-products .topProduct h1 {
@@ -1409,7 +1451,6 @@ main {
 
 .top-products .topProduct .top-selling-product {
   width: 355.8px;
-  height: 109.79px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1417,6 +1458,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.top-products .topProduct .top-selling-product:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .top-products .topProduct .top-selling-product .top-selling-product-image {
@@ -1482,6 +1530,13 @@ main {
   font-weight: 700;
   border: 0px;
   height: 38.4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.top-products .topProduct .top-selling-product .top-selling-product-content span:hover {
+  color: #3Bb77e;
 }
 
 .top-products .topProduct .top-selling-product .top-selling-product-content .top-selling-product-content-rating {

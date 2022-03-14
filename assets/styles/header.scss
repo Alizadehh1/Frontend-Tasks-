@@ -164,6 +164,16 @@ header{
     padding: 30px 12px;
     border-bottom: 1px solid rgb(236, 236, 236);
     justify-content: space-between;
+    .mobile-menu{
+        width: 27px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 22px;
+        }
+    }
     .logo-container{
         // width: 250px;
         width: auto;
@@ -211,6 +221,9 @@ header{
                     border: 0px;
                     width: 100%;
                     height: 100%;
+                    &:focus{
+                        outline: none;
+                    }
                 }
                 i{
                     display: flex;
@@ -274,4 +287,15 @@ header{
             cursor: pointer;
         }
     }
+}
+.mobile-menu-container{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+    display: none;
+    transform: translateX(-2000px);
+}
+.mobile-menu-container-active{
+    transform: translateX(0px);
+    display: block;
 }
