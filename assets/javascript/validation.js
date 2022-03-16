@@ -11,7 +11,6 @@ let securityCodeErr = document.querySelector('#security-err')
 let btnSubmit = document.getElementById('btnSubmit');
 let formGroup = document.querySelectorAll('.form-group');
 let inputs = document.querySelectorAll('input');
-let registerSuccess = document.querySelector('.register-success');
 let checker = false;
 
 let firstNum = document.querySelector('.firstNum');
@@ -149,6 +148,29 @@ pwd2.addEventListener('blur' , pwd2Checker = () => {
     }
 });
 
+securityCode.addEventListener('blur' , securityCodeChecker = () => {
+    if (securityCode.value == ''){
+        securityCode.style.border = '1px solid crimson';
+        securityCodeErr.textContent = 'Security code is required';
+        securityCodeErr.style.color = 'crimson';
+        securityCode.nextElementSibling.style.visibility = 'visible';
+        checker = true;
+    }
+    else if (securityCode.value != firstNum.textContent + secondNum.textContent + thirdNum.textContent + fourthNum.textContent){
+        securityCode.style.border = '1px solid crimson';
+        securityCodeErr.textContent = 'Security code is incorrect';
+        securityCodeErr.style.color = 'crimson';
+        securityCode.nextElementSibling.style.visibility = 'visible';
+        checker = true;
+    }
+    else{
+        securityCode.style.border = '1px solid #ced4da';
+        securityCodeErr.textContent = '';
+        securityCode.nextElementSibling.style.visibility = 'hidden';
+        checker = false;
+    }
+});
+
 usernameorEmailExists = () => {
     usernameErr.textContent = 'Username or Email already exist';
     usernameErr.style.color = 'crimson';
@@ -163,19 +185,31 @@ usernameorEmailExists = () => {
     checker = true;
 }
 
+incorrectSecurityCode = () => {
+    securityCodeErr.textContent = 'Incorrect security code';
+    securityCodeErr.style.color = 'crimson';
+    securityCode.style.border = '1px solid crimson';
+    securityCode.nextElementSibling.style.visibility = 'visible';
+
+    checker = true;
+}
+
 btnSubmit.addEventListener('click' , () => {
     usernameChecker();
     emailChecker();
     pwdChecker();
     pwd2Checker();
-    if (checker == false) {
-        let userData = {
-            username: username.value,
-            email: email.value,
-            password: pwd.value
-        };
-        saveData(userData);
-    }
+    securityCodeChecker();
+    
+        
+        if (checker == false) {
+            let userData = {
+                username: username.value,
+                email: email.value,
+                password: pwd.value
+            };
+            saveData(userData);
+        }
 });
 
 function saveData(userData) {  
@@ -191,4 +225,5 @@ function saveData(userData) {
     }
     ourDatas.push(userData);
     localStorage.setItem('userDatas', JSON.stringify(ourDatas));
+    location.replace('/page-account.html');
 }

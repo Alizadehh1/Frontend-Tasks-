@@ -65,7 +65,7 @@
             }
 
         }
-        form{
+        section{
             .form-group{
                 margin-bottom: 16px;
                 input{
@@ -194,24 +194,19 @@
                 }
             }
             .btnSubmit{
-                a{
-                    display: flex;
+                button{
                     width: 224.86px;
                     height: 56px;
-                    button{
-                        width: 100%;
-                        height: 100%;
-                        background-color: #3BB77E;
-                        border-radius: 10px;
-                        font-size: 16px;
-                        line-height: 24px;
-                        color: white;
-                        border: none;
-                        transition: 0.25s;
-                        &:hover{
-                            background-color: #29A56C;
-                            transform: translateY(-5px);
-                        }
+                    background-color: #3BB77E;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: white;
+                    border: none;
+                    transition: 0.25s;
+                    &:hover{
+                        background-color: #29A56C;
+                        transform: translateY(-5px);
                     }
                 }
                 margin-bottom: 30px;

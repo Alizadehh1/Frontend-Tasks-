@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="./vendors/bootstrap/bootstrap.js" defer></script>
     <script src="./assets/javascript/burger.js" defer></script>
-    <script src="./validation.js" defer></script>
+    <script src="./assets/javascript/validation.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/register.css">
@@ -195,7 +195,7 @@
                     <h1>Create an Account</h1>
                     <p>Already have an account? <a href="./login.html">Login</a></p>
                 </div>
-                <form  action="#">
+                <section>
 
                     <div class="username form-group">
                         <input type="text" placeholder="Username" id="username">
@@ -226,10 +226,10 @@
                         <i class="fas fa-exclamation-circle"></i>
                         <small id="security-err"></small>
                         <div>
-                            <b class="firstNum">8</b>
-                            <b class="secondNum">6</b>
-                            <b class="thirdNum">7</b>
-                            <b class="fourthNum">5</b>
+                            <b class="firstNum"></b>
+                            <b class="secondNum"></b>
+                            <b class="thirdNum"></b>
+                            <b class="fourthNum"></b>
                         </div>
                     </div>
 
@@ -259,9 +259,7 @@
                     </div>
 
                     <div class="btnSubmit">
-                        <a class="register-success">
-                            <button id="btnSubmit">Submit & Register</button>
-                        </a>
+                        <button type="submit" id="btnSubmit">Submit & Register</button>
                     </div>
 
                     <p class="texts">
@@ -271,7 +269,7 @@
                         for other purposes described in our privacy policy
                     </p>
 
-                </form>
+                </section>
             </div>
             <div class="registration-right-container col-lg-4 d-none d-lg-block">
                 <div class="applications-container">

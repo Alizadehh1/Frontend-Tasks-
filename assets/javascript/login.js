@@ -33,8 +33,8 @@ securityCode.addEventListener('focus', () => {
     securityCode.nextElementSibling.nextElementSibling.textContent = '';
 });
 
-usernameorEmailExists = () => {
-    usernameorEmailErr.textContent = 'Username or Email already exist';
+usernameorEmailIncorrect = () => {
+    usernameorEmailErr.textContent = 'Username or Email incorrect';
     usernameorEmailErr.style.color = 'crimson';
     usernameOrEmail.style.border = '1px solid crimson';
     usernameOrEmail.nextElementSibling.style.visibility = 'visible';
@@ -59,13 +59,12 @@ incorrectSecurityCode = () => {
 
 btnSubmit.addEventListener('click' , () => {
     let userDatas = JSON.parse(localStorage.getItem('userDatas'));
-    console.log(userDatas[0].username);
-
+    
     if (firstNum.textContent + secondNum.textContent + thirdNum.textContent + fourthNum.textContent == securityCode.value){
         for (let i = 0; i < userDatas.length; i++) {
             if (userDatas[i].username == usernameOrEmail.value || userDatas[i].email == usernameOrEmail.value) {
                 if (userDatas[i].password == password.value) {
-                    alert('Login Successful');
+                    location.replace('/page-account.html');
                     return;
                 }else{
                     incorrectPassword();
@@ -73,7 +72,7 @@ btnSubmit.addEventListener('click' , () => {
                 }
             }
         }
-        usernameorEmailExists();
+        usernameorEmailIncorrect();
     }else{
         incorrectSecurityCode();
     } 

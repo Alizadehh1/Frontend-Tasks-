@@ -91,12 +91,12 @@
   color: #FDC040;
 }
 
-.page-content .registration-left-container form .form-group {
+.page-content .registration-left-container section .form-group {
   margin-bottom: 16px;
   position: relative;
 }
 
-.page-content .registration-left-container form .form-group input {
+.page-content .registration-left-container section .form-group input {
   height: 64px;
   padding: 1px 2px 1px 20px;
   border: 1px solid #ececec;
@@ -104,7 +104,7 @@
   width: 100%;
 }
 
-.page-content .registration-left-container form .form-group i {
+.page-content .registration-left-container section .form-group i {
   position: absolute;
   right: 5px;
   bottom: 24px;
@@ -112,14 +112,14 @@
   color: crimson;
 }
 
-.page-content .registration-left-container form .form-group small {
+.page-content .registration-left-container section .form-group small {
   position: relative;
   left: 0px;
   color: crimson;
   visibility: visible;
 }
 
-.page-content .registration-left-container form .security-code-container {
+.page-content .registration-left-container section .security-code-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +132,7 @@
   position: relative;
 }
 
-.page-content .registration-left-container form .security-code-container input {
+.page-content .registration-left-container section .security-code-container input {
   width: 196.8px;
   height: 100%;
   padding: 1px 2px 1px 20px;
@@ -140,7 +140,7 @@
   border-radius: 10px;
 }
 
-.page-content .registration-left-container form .security-code-container i {
+.page-content .registration-left-container section .security-code-container i {
   position: absolute;
   left: 175px;
   bottom: 24px;
@@ -148,14 +148,14 @@
   color: crimson;
 }
 
-.page-content .registration-left-container form .security-code-container small {
+.page-content .registration-left-container section .security-code-container small {
   position: absolute;
   bottom: -20px;
   color: crimson;
   visibility: visible;
 }
 
-.page-content .registration-left-container form .security-code-container div {
+.page-content .registration-left-container section .security-code-container div {
   width: 149.61px;
   padding: 0px 40px;
   height: 100%;
@@ -172,46 +172,46 @@
           justify-content: space-between;
 }
 
-.page-content .registration-left-container form .security-code-container div b {
+.page-content .registration-left-container section .security-code-container div b {
   font-size: 24px;
 }
 
-.page-content .registration-left-container form .security-code-container div .firstNum {
+.page-content .registration-left-container section .security-code-container div .firstNum {
   color: #55bb90;
 }
 
-.page-content .registration-left-container form .security-code-container div .secondNum {
+.page-content .registration-left-container section .security-code-container div .secondNum {
   color: #f74b81;
 }
 
-.page-content .registration-left-container form .security-code-container div .thirdNum {
+.page-content .registration-left-container section .security-code-container div .thirdNum {
   color: #67bcee;
 }
 
-.page-content .registration-left-container form .security-code-container div .fourthNum {
+.page-content .registration-left-container section .security-code-container div .fourthNum {
   color: #f59758;
 }
 
-.page-content .registration-left-container form .options {
+.page-content .registration-left-container section .options {
   margin-bottom: 50px;
 }
 
-.page-content .registration-left-container form .options div {
+.page-content .registration-left-container section .options div {
   margin-bottom: 10px;
 }
 
-.page-content .registration-left-container form .options div input {
+.page-content .registration-left-container section .options div input {
   width: 14px;
   height: 14px;
 }
 
-.page-content .registration-left-container form .options div label {
+.page-content .registration-left-container section .options div label {
   color: #292b2c;
   line-height: 24px;
   margin-bottom: 5px;
 }
 
-.page-content .registration-left-container form .agreement {
+.page-content .registration-left-container section .agreement {
   margin-top: 5px;
   margin-bottom: 50px;
   display: -webkit-box;
@@ -222,7 +222,7 @@
           justify-content: space-between;
 }
 
-.page-content .registration-left-container form .agreement .check {
+.page-content .registration-left-container section .agreement .check {
   margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,20 +232,20 @@
           align-items: center;
 }
 
-.page-content .registration-left-container form .agreement .check input {
+.page-content .registration-left-container section .agreement .check input {
   width: 17px;
   height: 17px;
   border-radius: 2px;
   margin-right: 8px;
 }
 
-.page-content .registration-left-container form .agreement .check label {
+.page-content .registration-left-container section .agreement .check label {
   color: #687188;
   font-size: 14px;
   line-height: 24px;
 }
 
-.page-content .registration-left-container form .agreement a {
+.page-content .registration-left-container section .agreement a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,30 +257,22 @@
   transition: 0.3s;
 }
 
-.page-content .registration-left-container form .agreement a:hover {
+.page-content .registration-left-container section .agreement a:hover {
   color: #FDC040;
 }
 
-.page-content .registration-left-container form .agreement a i {
+.page-content .registration-left-container section .agreement a i {
   color: #b6b6b6;
   margin-right: 5px;
 }
 
-.page-content .registration-left-container form .btnSubmit {
+.page-content .registration-left-container section .btnSubmit {
   margin-bottom: 30px;
 }
 
-.page-content .registration-left-container form .btnSubmit a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.page-content .registration-left-container section .btnSubmit button {
   width: 224.86px;
   height: 56px;
-}
-
-.page-content .registration-left-container form .btnSubmit a button {
-  width: 100%;
-  height: 100%;
   background-color: #3BB77E;
   border-radius: 10px;
   font-size: 16px;
@@ -291,20 +283,20 @@
   transition: 0.25s;
 }
 
-.page-content .registration-left-container form .btnSubmit a button:hover {
+.page-content .registration-left-container section .btnSubmit button:hover {
   background-color: #29A56C;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-.page-content .registration-left-container form .texts {
+.page-content .registration-left-container section .texts {
   font-size: 13px;
   font-weight: 400;
   color: #b6b6b6;
   line-height: 24px;
 }
 
-.page-content .registration-left-container form .texts strong {
+.page-content .registration-left-container section .texts strong {
   font-weight: 700;
 }
 
