@@ -110,6 +110,7 @@
 .pageContent-container .pageContent .pageContent-login .form-login .username-email-container, .pageContent-container .pageContent .pageContent-login .form-login .password-container {
   height: 64px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .pageContent-container .pageContent .pageContent-login .form-login .username-email-container input, .pageContent-container .pageContent .pageContent-login .form-login .password-container input {
@@ -118,6 +119,21 @@
   padding: 1px 2px 1px 20px;
   border: 1px solid #ececec;
   border-radius: 10px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .username-email-container i, .pageContent-container .pageContent .pageContent-login .form-login .password-container i {
+  position: absolute;
+  right: 5px;
+  bottom: 24px;
+  visibility: hidden;
+  color: crimson;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .username-email-container small, .pageContent-container .pageContent .pageContent-login .form-login .password-container small {
+  position: relative;
+  left: 0px;
+  color: crimson;
+  visibility: visible;
 }
 
 .pageContent-container .pageContent .pageContent-login .form-login .security-code-container {
@@ -130,6 +146,7 @@
   height: 64px;
   margin-bottom: 20px;
   margin-top: 5px;
+  position: relative;
 }
 
 .pageContent-container .pageContent .pageContent-login .form-login .security-code-container input {
@@ -138,6 +155,21 @@
   padding: 1px 2px 1px 20px;
   border: 1px solid #ececec;
   border-radius: 10px;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container i {
+  position: absolute;
+  left: 175px;
+  bottom: 24px;
+  visibility: hidden;
+  color: crimson;
+}
+
+.pageContent-container .pageContent .pageContent-login .form-login .security-code-container small {
+  position: absolute;
+  bottom: -20px;
+  color: crimson;
+  visibility: visible;
 }
 
 .pageContent-container .pageContent .pageContent-login .form-login .security-code-container div {

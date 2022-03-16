@@ -110,10 +110,17 @@ footer a, footer span, footer p {
   background-color: #f4f6fa;
 }
 
+.ability-of-company div:hover .icon {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 .ability-of-company div .icon {
   margin-right: 20px;
   padding: 0px;
   height: 67.2px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   width: 60px;
 }
 
@@ -291,6 +298,14 @@ footer a, footer span, footer p {
   margin-bottom: 13px;
   color: #253d4e;
   font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-footer .links .link a:hover {
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
+  color: #3BB77E;
 }
 
 .main-footer .links .link .last-link {
@@ -335,6 +350,14 @@ footer a, footer span, footer p {
   width: 128px;
   height: 42.5px;
   margin-right: 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.main-footer .application-container .application-icons img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .main-footer .application-container span {

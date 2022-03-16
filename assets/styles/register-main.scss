@@ -1,0 +1,273 @@
+.page-location-container{
+    height: 66.6px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    .page-location{
+        padding: 0px 12px;
+        display: flex;
+        align-items: center;
+        width: 250.26px;
+        justify-content: space-between;
+        a{
+            width: 58.73px;
+            display: flex;
+            justify-content: space-between;
+            i{
+                color: #3BB77E;
+                font-size: 14px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 600;
+                color: #3BB77E;
+            }
+        }
+        i{
+            font-size: 9px;
+            color: #7e7e7e;
+            // padding: 0px 12px;
+        }
+        p{
+            font-size: 14px;
+            color: #7e7e7e;
+        }
+    }
+}
+.page-content{
+    width: 100%;
+    padding: 150px 0px;
+    display: flex;
+    justify-content: center;
+    .registration-left-container{
+        height: 876.85px;
+        padding: 0px 12px;
+        .header-registration-left{
+            h1{
+                color: #253d4e;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 57.6px;
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 30px;
+                color: #7e7e7e;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                a{
+                    color: #3BB77E;
+                    transition: 0.3s;
+                    &:hover{
+                        color: #FDC040;
+                    }
+                }
+            }
+
+        }
+        form{
+            .form-group{
+                margin-bottom: 16px;
+                input{
+                    height: 64px;
+                    padding: 1px 2px 1px 20px;
+                    border: 1px solid rgb(236, 236, 236);
+                    border-radius: 10px;
+                    width: 100%;
+                }
+                position: relative;
+                i{
+                    position: absolute;
+                    right: 5px;
+                    bottom: 24px;
+                    visibility: hidden;
+                    color: crimson;
+                }
+                small{
+                    position: relative;
+                    left: 0px;
+                    color: crimson;
+                    visibility: visible;
+                }
+            }
+            .security-code-container{
+                display: flex;
+                justify-content: space-between;
+                height: 64px;
+                margin-bottom: 20px;
+                margin-top: 5px;
+                input{
+                    width: 196.8px;
+                    height: 100%;
+                    padding: 1px 2px 1px 20px;
+                    border: 1px solid rgb(236, 236, 236);
+                    border-radius: 10px;
+                }
+                position: relative;
+                i{
+                    position: absolute;
+                    left: 175px;
+                    bottom: 24px;
+                    visibility: hidden;
+                    color: crimson;
+                }
+                small{
+                    position: absolute;
+                    bottom: -20px;
+                    color: crimson;
+                    visibility: visible;
+                }
+                div{
+                    width: 149.61px;
+                    padding: 0px 40px;
+                    height: 100%;
+                    background-color: rgb(188, 227, 201);
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    b{
+                        font-size: 24px;
+                    }
+                    .firstNum{
+                        color: #55bb90;
+                    }
+                    .secondNum{
+                        color: #f74b81;
+                    }
+                    .thirdNum{
+                        color: #67bcee;
+                    }
+                    .fourthNum{
+                        color: #f59758;
+                    }
+                }
+            }
+            .options{
+                margin-bottom: 50px;
+                div{
+                    margin-bottom: 10px;
+                    input{
+                        width: 14px;
+                        height: 14px;
+                    }
+                    label{
+                        color: #292b2c;
+                        line-height: 24px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .agreement{
+                margin-top: 5px;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: space-between;
+                .check{
+                    margin-bottom: 5px;
+                    display: flex;
+                    align-items: center;
+                    input{
+                        width: 17px;
+                        height: 17px;
+                        border-radius: 2px;
+                        margin-right: 8px;
+                    }
+                    label{
+                        color: #687188;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    color: #3BB77E;
+                    transition: 0.3s;
+                    &:hover{
+                        color: #FDC040;
+                    }
+                    i{
+                        color: #b6b6b6;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .btnSubmit{
+                a{
+                    display: flex;
+                    width: 224.86px;
+                    height: 56px;
+                    button{
+                        width: 100%;
+                        height: 100%;
+                        background-color: #3BB77E;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: white;
+                        border: none;
+                        transition: 0.25s;
+                        &:hover{
+                            background-color: #29A56C;
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+                margin-bottom: 30px;
+            }
+            .texts{
+                font-size: 13px;
+                font-weight: 400;
+                color: rgb(182, 182, 182);
+                line-height: 24px;
+                strong{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .registration-right-container{
+        padding-left: 12px;
+        padding-right: 30px;
+        .applications-container{
+            padding: 50px;
+            margin-top: 115px;
+            margin-left: 30px;
+            width: 434.39px;
+            height: 318px;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 15px;
+            .app{
+                border-radius: 10px;
+                padding: 15px 25px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                transition: 0.3s;
+                &:hover{
+                    transform: translateY(-3px);
+                }
+                img{
+                    margin-right: 15px;
+                }
+            }
+            .facebook{
+                background-color: #1877F2;
+                color: white;
+            }
+            .google{
+                background-color: white;
+                color: #7e7e7e;
+                border: 1px solid rgb(242, 243, 244);
+            }
+            .apple{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

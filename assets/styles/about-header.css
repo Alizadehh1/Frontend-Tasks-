@@ -205,7 +205,7 @@ header {
 }
 
 .header-container-2 .logo-container {
-  width: 250px;
+  width: auto;
   height: 62.45px;
   display: -webkit-box;
   display: -ms-flexbox;

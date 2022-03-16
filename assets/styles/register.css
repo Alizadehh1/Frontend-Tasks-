@@ -1,7 +1,7 @@
-@import url(./page-account-header.css);
-@import url(./page-account-navigation.css);
-@import url(./page-account-main.css);
-@import url(./page-account-footer.css);
+@import url(./register-header.css);
+@import url(./register-navigation.css);
+@import url(./register-main.css);
+@import url(./register-footer.css);
 @import url(./responsibility.css);
 @font-face {
   font-family: Lato;
@@ -18,12 +18,12 @@
           box-sizing: border-box;
 }
 
-* h1 {
-  font-family: Quicksand;
+* h1, * h2, * h3, * h4, * h5, * h6, * button {
+  font-family: Quicksand,sans-serif;
   color: #253d4e;
 }
 
-* a, * span, * p {
+* a, * span, * p, * label {
   font-family: Lato,sans-serif;
 }
 
@@ -75,4 +75,4 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*# sourceMappingURL=page-account.css.map */
+/*# sourceMappingURL=register.css.map */

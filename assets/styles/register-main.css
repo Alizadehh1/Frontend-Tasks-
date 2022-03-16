@@ -1,0 +1,367 @@
+.page-location-container {
+  height: 66.6px;
+  padding: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-location-container .page-location {
+  padding: 0px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250.26px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-location-container .page-location a {
+  width: 58.73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-location-container .page-location a i {
+  color: #3BB77E;
+  font-size: 14px;
+}
+
+.page-location-container .page-location a p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3BB77E;
+}
+
+.page-location-container .page-location i {
+  font-size: 9px;
+  color: #7e7e7e;
+}
+
+.page-location-container .page-location p {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.page-content {
+  width: 100%;
+  padding: 150px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-content .registration-left-container {
+  height: 876.85px;
+  padding: 0px 12px;
+}
+
+.page-content .registration-left-container .header-registration-left h1 {
+  color: #253d4e;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin-bottom: 5px;
+}
+
+.page-content .registration-left-container .header-registration-left p {
+  margin-bottom: 30px;
+  color: #7e7e7e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page-content .registration-left-container .header-registration-left p a {
+  color: #3BB77E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page-content .registration-left-container .header-registration-left p a:hover {
+  color: #FDC040;
+}
+
+.page-content .registration-left-container form .form-group {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.page-content .registration-left-container form .form-group input {
+  height: 64px;
+  padding: 1px 2px 1px 20px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.page-content .registration-left-container form .form-group i {
+  position: absolute;
+  right: 5px;
+  bottom: 24px;
+  visibility: hidden;
+  color: crimson;
+}
+
+.page-content .registration-left-container form .form-group small {
+  position: relative;
+  left: 0px;
+  color: crimson;
+  visibility: visible;
+}
+
+.page-content .registration-left-container form .security-code-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 64px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.page-content .registration-left-container form .security-code-container input {
+  width: 196.8px;
+  height: 100%;
+  padding: 1px 2px 1px 20px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.page-content .registration-left-container form .security-code-container i {
+  position: absolute;
+  left: 175px;
+  bottom: 24px;
+  visibility: hidden;
+  color: crimson;
+}
+
+.page-content .registration-left-container form .security-code-container small {
+  position: absolute;
+  bottom: -20px;
+  color: crimson;
+  visibility: visible;
+}
+
+.page-content .registration-left-container form .security-code-container div {
+  width: 149.61px;
+  padding: 0px 40px;
+  height: 100%;
+  background-color: #bce3c9;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-content .registration-left-container form .security-code-container div b {
+  font-size: 24px;
+}
+
+.page-content .registration-left-container form .security-code-container div .firstNum {
+  color: #55bb90;
+}
+
+.page-content .registration-left-container form .security-code-container div .secondNum {
+  color: #f74b81;
+}
+
+.page-content .registration-left-container form .security-code-container div .thirdNum {
+  color: #67bcee;
+}
+
+.page-content .registration-left-container form .security-code-container div .fourthNum {
+  color: #f59758;
+}
+
+.page-content .registration-left-container form .options {
+  margin-bottom: 50px;
+}
+
+.page-content .registration-left-container form .options div {
+  margin-bottom: 10px;
+}
+
+.page-content .registration-left-container form .options div input {
+  width: 14px;
+  height: 14px;
+}
+
+.page-content .registration-left-container form .options div label {
+  color: #292b2c;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.page-content .registration-left-container form .agreement {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-content .registration-left-container form .agreement .check {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-content .registration-left-container form .agreement .check input {
+  width: 17px;
+  height: 17px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.page-content .registration-left-container form .agreement .check label {
+  color: #687188;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page-content .registration-left-container form .agreement a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3BB77E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page-content .registration-left-container form .agreement a:hover {
+  color: #FDC040;
+}
+
+.page-content .registration-left-container form .agreement a i {
+  color: #b6b6b6;
+  margin-right: 5px;
+}
+
+.page-content .registration-left-container form .btnSubmit {
+  margin-bottom: 30px;
+}
+
+.page-content .registration-left-container form .btnSubmit a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 224.86px;
+  height: 56px;
+}
+
+.page-content .registration-left-container form .btnSubmit a button {
+  width: 100%;
+  height: 100%;
+  background-color: #3BB77E;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  border: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.page-content .registration-left-container form .btnSubmit a button:hover {
+  background-color: #29A56C;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.page-content .registration-left-container form .texts {
+  font-size: 13px;
+  font-weight: 400;
+  color: #b6b6b6;
+  line-height: 24px;
+}
+
+.page-content .registration-left-container form .texts strong {
+  font-weight: 700;
+}
+
+.page-content .registration-right-container {
+  padding-left: 12px;
+  padding-right: 30px;
+}
+
+.page-content .registration-right-container .applications-container {
+  padding: 50px;
+  margin-top: 115px;
+  margin-left: 30px;
+  width: 434.39px;
+  height: 318px;
+  border: 1px solid #ececec;
+  border-radius: 15px;
+}
+
+.page-content .registration-right-container .applications-container .app {
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page-content .registration-right-container .applications-container .app:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.page-content .registration-right-container .applications-container .app img {
+  margin-right: 15px;
+}
+
+.page-content .registration-right-container .applications-container .facebook {
+  background-color: #1877F2;
+  color: white;
+}
+
+.page-content .registration-right-container .applications-container .google {
+  background-color: white;
+  color: #7e7e7e;
+  border: 1px solid #f2f3f4;
+}
+
+.page-content .registration-right-container .applications-container .apple {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=register-main.css.map */

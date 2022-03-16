@@ -76,7 +76,7 @@
 
 @media screen and (min-width: 991px) {
   .header-container-2 .mobile-menu {
-    display: none;
+    display: none !important;
   }
 }
 

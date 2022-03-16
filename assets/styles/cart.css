@@ -2,6 +2,7 @@
 @import url(./cart-navigation.css);
 @import url(./cart-main.css);
 @import url(./cart-footer.css);
+@import url(./responsibility.css);
 @font-face {
   font-family: Lato;
   src: url(../fonts/Lato-Regular.ttf);

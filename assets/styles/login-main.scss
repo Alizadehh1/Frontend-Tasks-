@@ -85,6 +85,20 @@
                         border: 1px solid rgb(236, 236, 236);
                         border-radius: 10px;
                     }
+                    position: relative;
+                    i{
+                        position: absolute;
+                        right: 5px;
+                        bottom: 24px;
+                        visibility: hidden;
+                        color: crimson;
+                    }
+                    small{
+                        position: relative;
+                        left: 0px;
+                        color: crimson;
+                        visibility: visible;
+                    }
                 }
                 .security-code-container{
                     display: flex;
@@ -98,6 +112,20 @@
                         padding: 1px 2px 1px 20px;
                         border: 1px solid rgb(236, 236, 236);
                         border-radius: 10px;
+                    }
+                    position: relative;
+                    i{
+                        position: absolute;
+                        left: 175px;
+                        bottom: 24px;
+                        visibility: hidden;
+                        color: crimson;
+                    }
+                    small{
+                        position: absolute;
+                        bottom: -20px;
+                        color: crimson;
+                        visibility: visible;
                     }
                     div{
                         width: 149.61px;

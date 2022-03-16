@@ -85,10 +85,16 @@ footer{
         height: 112.2px;
         border-radius: 10px;
         background-color: rgb(244, 246, 250);
+        &:hover{
+            .icon{
+                transform: translateY(-5px);
+            }
+        }
         .icon{
             margin-right: 20px;
             padding: 0px;
             height: 67.2px;
+            transition: 0.4s;
             width: 60px;
             img{
                 width: 60px;
@@ -218,6 +224,11 @@ footer{
                 margin-bottom: 13px;
                 color: #253d4e;
                 font-size: 15px;
+                transition: 0.3s;
+                &:hover{
+                    transform: translateX(7px);
+                    color: #3BB77E;
+                }
             }
             .last-link{
                 margin-bottom: 0px;
@@ -249,6 +260,11 @@ footer{
                 width: 128px;
                 height: 42.5px;
                 margin-right: 12px;
+                transition: 0.4s;
+                cursor: pointer;
+                &:hover{
+                    transform: translateY(-5px);
+                }
             }
         }
         span{
